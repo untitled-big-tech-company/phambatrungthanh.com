@@ -5,3 +5,7 @@ dist
 .vinxi
 .nitro
 *.gen.ts
+
+# Cloudflare
+.wrangler
+.dev.vars
