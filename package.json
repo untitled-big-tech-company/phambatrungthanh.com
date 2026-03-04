@@ -1,0 +1,50 @@
+{
+  "name": "phambatrungthanh.com",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.163.3",
+    "@tanstack/react-start": "^1.166.1",
+    "html-react-parser": "^5.2.17",
+    "mermaid": "^11.12.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vinxi": "^0.5.11"
+  },
+  "devDependencies": {
+    "@content-collections/core": "^0.14.2",
+    "@content-collections/mdx": "^0.2.2",
+    "@content-collections/vite": "^0.2.9",
+    "@mdx-js/mdx": "^3.1.1",
+    "@shikijs/rehype": "^4.0.1",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/katex": "^0.16.8",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
+    "katex": "^0.16.33",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-katex": "^7.0.1",
+    "rehype-raw": "^7.0.0",
+    "rehype-slug": "^6.0.0",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "shiki": "^4.0.1",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3",
+    "unified": "^11.0.5",
+    "vite": "^7.3.1",
+    "vite-tsconfig-paths": "^6.1.1",
+    "zod": "^4.3.6"
+  }
+}
