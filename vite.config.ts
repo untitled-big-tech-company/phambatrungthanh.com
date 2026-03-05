@@ -9,9 +9,14 @@ export default defineConfig({
   plugins: [
     contentCollections(),
     tailwindcss(),
-    tsConfigPaths(),
+    tsConfigPaths({
+      projects: ["./tsconfig.json"],
+    }),
     tanstackStart({
-      target: "static",
+      prerender: {
+        enabled: true,
+        crawlLinks: true,
+      },
     }),
     react(),
   ],

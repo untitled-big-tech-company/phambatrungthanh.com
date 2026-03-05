@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vinxi dev",
-    "build": "vinxi build",
-    "start": "vinxi start"
+    "dev": "vite dev",
+    "build": "vite build",
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.163.3",
@@ -14,8 +14,7 @@
     "html-react-parser": "^5.2.17",
     "mermaid": "^11.12.3",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "vinxi": "^0.5.11"
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@content-collections/core": "^0.14.2",
