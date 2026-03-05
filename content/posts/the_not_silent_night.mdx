@@ -6,626 +6,612 @@ tags: ["ai", "iot"]
 published: true
 ---
 
-### Ba Mô-đun
+### Ba Mảnh Ghép Của Hệ Thống
 
-Trước khi câu chuyện bắt đầu, cần hiểu ai đang theo dõi.
+Trước khi đi vào câu chuyện, chúng ta cần biết ai là người đang giám sát hệ thống.
 
-**ARIA** — Tác nhân Thông minh Thích nghi Thời gian thực — sống bên trong máy móc. Mỗi dây chuyền sản xuất có một ARIA: ARIA-A, ARIA-B, ARIA-C. Mỗi đơn vị là một mô-đun nhỏ gắn trực tiếp lên khung máy, kết nối với mười bảy cảm biến và được huấn luyện chỉ để hiểu một thứ — hành vi chính xác của chiếc máy đó qua nhiều tháng vận hành. ARIA không biết gì về hợp đồng, tồn kho, khách hàng, hay con người trên sàn xưởng. Nó chỉ biết một chiếc máy, hiểu sâu và toàn diện. Nhiệm vụ duy nhất của nó là lắng nghe, phát hiện bất thường, nhận lệnh từ NEXUS, thực thi cơ học và báo cáo lại. Các đơn vị ARIA không nói chuyện với nhau. Chúng không nói chuyện với con người. Chúng chỉ nói chuyện với NEXUS.
+**ARIA** — Trí tuệ Nhân tạo Thích ứng Thời gian thực — tồn tại ngay bên trong lòng máy móc. Mỗi dây chuyền sản xuất được trang bị một hệ thống ARIA riêng: ARIA-A, ARIA-B, và ARIA-C. Bản thân mỗi ARIA là một mô-đun nhỏ xíu gắn trực tiếp lên khung máy, kết nối với mười bảy cảm biến khác nhau. Công việc của nó là học đi học lại một thứ duy nhất: từng nhịp điệu và hành vi của cỗ máy đó qua nhiều tháng ròng rã vận hành. ARIA chẳng màng đến hợp đồng, lượng hàng tồn kho, khách hàng, hay những công nhân đang đi lại dưới xưởng. Thế giới của nó chỉ có cỗ máy ấy — hiểu một cách sâu sắc và trọn vẹn. Nhiệm vụ duy nhất của nó là lắng nghe, phát hiện những dấu hiệu bất thường, nhận lệnh từ trung tâm NEXUS, thực thi các thao tác cơ học và báo cáo kết quả. Các đơn vị ARIA không giao tiếp với nhau, cũng chẳng trò chuyện với con người. Chúng chỉ làm việc với NEXUS.
 
-**NEXUS** — trung tâm điều phối — đứng ở giữa. Nó nhận dữ liệu từ cả ba ARIA, đồng thời từ hệ thống ERP, cơ sở dữ liệu tồn kho, cổng thông tin nhà cung cấp, CRM, hợp đồng đang hiệu lực, lịch vận chuyển và chuỗi email mua hàng. NEXUS là mô-đun duy nhất nhìn thấy toàn cảnh. Khi NEXUS ra lệnh — làm chậm máy này, tăng tốc dây chuyền kia, tăng tần suất đọc cảm biến — lệnh đó truyền xuống ARIA liên quan, đơn vị đó thực thi thay đổi cơ học và xác nhận lại. NEXUS sau đó truyền đạt kết quả lên con người thông qua bảng điều khiển. ARIA không bao giờ giao tiếp trực tiếp với con người.
+**NEXUS** — bộ não điều phối — nằm ở vị trí trung tâm. Khác với ARIA, NEXUS nắm bắt toàn bộ bức tranh lớn. Nó không chỉ thu nhận dữ liệu từ cả ba đơn vị ARIA, mà còn liên kết trực tiếp với phần mềm quản trị doanh nghiệp (ERP), dữ liệu kho bãi, cổng thông tin nhà cung cấp, hệ thống khách hàng (CRM), các bản hợp đồng đang chạy, lịch trình vận chuyển và cả chuỗi email mua hàng. Khi NEXUS đưa ra quyết định — như giảm tốc độ máy này, tăng công suất dây chuyền kia, hay yêu cầu cảm biến đo lường thường xuyên hơn — lệnh đó sẽ được truyền xuống cho ARIA tương ứng. ARIA thực thi điều chỉnh cơ học và báo cáo hoàn tất. Sau đó, NEXUS sẽ tóm tắt thông tin và gửi lên cho con người thông qua Bảng điều khiển. ARIA tuyệt đối không bao giờ giao tiếp trực tiếp với con người.
 
-**Bảng điều khiển** — giao diện con người — nằm ở ranh giới giữa máy móc và người dùng. Đây không phải màn hình thụ động. Đây là nơi NEXUS trình bày những gì nó biết, những gì nó đề xuất, và những gì nó không thể làm nếu thiếu quyết định từ con người. Giao diện tự thích nghi theo người xem. Giám sát ca đêm thấy ngôn ngữ đơn giản và lựa chọn rõ ràng. Kỹ sư cao cấp thấy biểu đồ xu hướng cảm biến và thông tin kỹ thuật chiều sâu. Trưởng chuỗi cung ứng thấy các lựa chọn nguồn hàng và dữ liệu nhà cung cấp. Giám đốc thấy rủi ro, chi phí và báo cáo tóm tắt cho hội đồng quản trị. Cùng một dữ liệu bên dưới. Những lăng kính khác nhau phía trên.
+**Bảng điều khiển** — nơi máy móc giao tiếp với con người — chính là lằn ranh giữa hai thế giới. Đây không đơn thuần là một màn hình hiển thị thụ động. Đó là nơi NEXUS trình bày những gì nó tổng hợp được, đưa ra các đề xuất, và nêu rõ những việc nó không thể tự quyết nếu thiếu cái gật đầu của con người. Giao diện này tự động tùy biến theo người xem. Trưởng ca đêm sẽ thấy các thông báo bằng ngôn từ dễ hiểu kèm theo những lựa chọn rõ ràng. Kỹ sư chuyên môn lại thấy các biểu đồ kỹ thuật và thông số chi tiết. Trưởng phòng cung ứng thì thấy danh sách nguồn hàng và đối tác. Giám đốc sẽ nhìn thấy rủi ro, bài toán chi phí và báo cáo tổng quan dành cho Hội đồng quản trị. Tất cả đều chung một nguồn dữ liệu, nhưng được thể hiện qua những lăng kính khác nhau.
 
-Chuỗi giao tiếp hoạt động như sau:
+Quy trình giao tiếp diễn ra như sau:
 
 ```
-[CẢM BIẾN MÁY MÓC]
+[CẢM BIẾN TRÊN MÁY]
          ↓
-[ARIA-B]  — trí tuệ nhúng, cục bộ, hiểu một máy
-         ↓ cảnh báo
-[NEXUS]   — đối chiếu toàn bộ hệ thống, ra lệnh
-         ↓ thông báo
-         ↑ phê duyệt
-[BẢNG ĐIỀU KHIỂN] — giao diện con người, thích nghi theo người xem
-         ↓ quyết định
-[NEXUS]   — gửi phiếu nhiệm vụ cho vận hành viên, chờ xác nhận
-         ↓ phiếu nhiệm vụ        ↓ phiếu nhiệm vụ
-[VẬN HÀNH A]              [VẬN HÀNH C]  — đọc, xác nhận sẵn sàng
+[ARIA-B]  — AI nhúng, xử lý tại chỗ, chỉ thấu hiểu một cỗ máy
+         ↓ gửi cảnh báo
+[NEXUS]   — phân tích toàn hệ thống, đối chiếu dữ liệu
+         ↓ hiển thị thông báo
+         ↑ nhận phê duyệt
+[BẢNG ĐIỀU KHIỂN] — giao diện tùy biến theo người dùng
+         ↓ truyền quyết định
+[NEXUS]   — gửi phiếu công việc cho thợ máy, chờ xác nhận
+         ↓ thông báo               ↓ thông báo
+[THỢ MÁY A]               [THỢ MÁY C]  — đọc, xác nhận sẵn sàng
          ↓ xác nhận              ↓ xác nhận
-[NEXUS]   — xác nhận mở khóa lệnh máy
+[NEXUS]   — mở khóa lệnh điều khiển máy
          ↓ lệnh                 ↓ lệnh
-[ARIA-A]                  [ARIA-C]  — điều chỉnh cơ học, xác nhận lại
+[ARIA-A]                  [ARIA-C]  — điều chỉnh cơ học, báo cáo hoàn tất
 ```
 
-Đây là hệ thống đang vận hành lúc 2 giờ 47 phút sáng một ngày thứ Ba, khi sàn xưởng yên tĩnh và tất cả những người quan trọng đều đã ngủ.
+Đó là cách hệ thống này vận hành vào lúc 2 giờ 47 phút sáng của một ngày thứ Ba, khi cả phân xưởng chìm trong tĩnh lặng và những nhân sự chủ chốt đều đang say giấc.
 
 ---
 
-### Phần Một: Sàn Xưởng Đêm Khuya
+### Phần Một: Đêm Khuya Trên Xưởng Sản Xuất
 
-Nhà máy Hào Nam vận hành ba dây chuyền sản xuất — Dây Chuyền A, Dây Chuyền B và Dây Chuyền C — sáu ngày một tuần theo ba ca. Ca ngày là toàn bộ nhân lực, kỹ sư, ra quyết định. Ca chiều ổn định và giàu kinh nghiệm. Ca đêm tinh gọn hơn — vận hành viên, một giám sát, và máy móc.
+Nhà máy Hào Nam có ba dây chuyền sản xuất — A, B và C — chạy ba ca liên tục, sáu ngày mỗi tuần. Ca ngày quy tụ đông đủ nhân lực nhất, từ công nhân, kỹ sư đến các cấp quản lý. Ca chiều hoạt động nhịp nhàng với đội ngũ thợ lành nghề. Trong khi đó, ca đêm được tinh gọn tối đa: chỉ gồm thợ máy, một trưởng ca, và hệ thống máy móc.
 
-Minh đã chạy ca đêm được ba năm. Anh không phải kỹ sư. Anh không học về hệ thống cơ khí. Nhưng anh biết sàn xưởng này theo cách người ta biết ngôi nhà mình lớn lên — qua cảm giác, qua âm thanh, qua mùi đặc trưng gần Dây Chuyền C khi dầu làm mát đang nóng dần. Anh đi kiểm tra thủ công mỗi giờ một lần. Anh tin vào linh cảm của mình.
+Minh, một kỹ sư dạn dày kinh nghiệm, đã làm trưởng ca đêm suốt ba năm nay. Dù nắm vững mọi nguyên lý cơ khí, anh lại rành rẽ phân xưởng này hệt như thuộc lòng từng ngóc ngách trong nhà mình theo một cách rất bản năng — qua cảm giác, qua những tiếng động quen thuộc, qua cái mùi ngai ngái phát ra từ Dây chuyền C mỗi khi dầu làm mát nóng lên. Cứ mỗi giờ, anh lại đi tuần tra một vòng. Minh luôn kết hợp sự nhạy bén của một kỹ sư với trực giác của một người bám xưởng lâu năm.
 
-Đêm nay, linh cảm đó bảo anh rằng mọi thứ vẫn ổn.
+Đêm nay, trực giác bảo anh rằng mọi thứ vẫn đang êm xuôi.
 
-Anh đúng. Theo như bất kỳ con người nào có thể nhận ra.
-
----
-
-### Phần Hai: ARIA-B Nhận Ra Điều Gì Đó
-
-Lúc 2 giờ 47 phút sáng ngày 3 tháng 10, sâu bên trong máy ép xoay trục của Dây Chuyền B, ARIA-B nhận thấy điều mà Minh không thể thấy.
-
-ARIA-B được gắn trực tiếp vào khung máy ép, giữa vỏ hộp truyền động và ống dẫn dầu làm mát. Mười bảy luồng dữ liệu cảm biến chạy vào nó liên tục. Tám tháng qua, nó không làm gì khác ngoài học về chiếc máy này — mỗi lần khởi động, mỗi thay đổi tải, mỗi chu kỳ nhiệt qua từng ca làm việc. Nó đã xây dựng một mô hình chính xác và chi tiết về âm thanh, rung động của chiếc máy ép này khi còn khỏe mạnh.
-
-Lúc 2 giờ 47 phút sáng, chiếc máy ép không còn khớp với mô hình đó nữa.
-
-Không phải kiểu bùng phát đột ngột. Không có cảnh báo nào. Chỉ là một sự trôi dạt chậm, phức hợp trên ba kênh cảm biến cùng lúc — biên độ rung động tăng 0,003mm, tần số âm thanh dịch 11Hz, nhiệt độ ổ bi tăng 1,8°C. Mỗi chỉ số vẫn nằm thoải mái trong ngưỡng cảnh báo tiêu chuẩn của nhà máy. Hệ thống báo động thông thường không ghi nhận gì. Minh không nghe thấy gì trong lần đi kiểm tra. Bộ đếm sản lượng vẫn tích tắc đều đặn.
-
-Nhưng ARIA-B đã thấy kiểu dữ liệu này trước đây, trong lịch sử hư hỏng nó được huấn luyện. Nó nhận ra hình dạng của một ổ bi đang bắt đầu chết dần.
-
-Nó soạn một tin nhắn và gửi lên trên.
-
-```
-[ARIA-B → NEXUS]  02:47:13
-ĐƠN VỊ     : Dây Chuyền B — Máy ép xoay trục — Ổ bi Truyền động Chính (Vị trí 3)
-TÍN HIỆU   : Sai lệch vi mô phức hợp trên ba kênh
-               Rung động  +0,003mm biên độ   (ngưỡng cảnh báo: 0,01mm)
-               Âm thanh   +11Hz so với cơ sở  (ngưỡng cảnh báo: 40Hz)
-               Nhiệt độ   +1,8°C so với cơ sở (ngưỡng cảnh báo: 5°C)
-MẪU        : Phù hợp với giai đoạn đầu mòn vòng đua ổ bi
-ĐỘ TIN CẬY : 84%
-ĐỘ CẤP BÁCH: THẤP — sản lượng chưa bị ảnh hưởng, chưa dự đoán hư hỏng ngay
-ĐỀ XUẤT    : Kiểm tra trong vòng 7–10 ngày
-TRẠNG THÁI : Tiếp tục theo dõi bình thường. Đang chờ lệnh NEXUS.
-```
-
-ARIA-B gửi tin nhắn rồi tiếp tục lắng nghe. Nó đã hoàn thành nhiệm vụ. Những gì xảy ra tiếp theo không phải việc của nó.
+Và anh đã đúng. Ít nhất là với những gì giới hạn con người có thể cảm nhận được.
 
 ---
 
-### Phần Ba: NEXUS Kết Nối Các Mảnh Ghép
+### Phần Hai: ARIA-B Nhận Ra Điều Bất Thường
 
-NEXUS nhận tin nhắn từ ARIA-B lúc 2 giờ 47 phút 14 giây sáng.
+Vào lúc 2 giờ 47 phút sáng ngày 3 tháng 10, sâu bên trong cỗ máy ép trục xoay của Dây chuyền B, ARIA-B đã nhận thấy một điều mà Minh không thể nhìn ra.
 
-Nếu ARIA-B chỉ biết một máy, thì NEXUS biết tất cả. Nó bắt đầu truy xuất từ nhiều hệ thống cùng lúc — ERP, cơ sở dữ liệu tồn kho, cổng thông tin nhà cung cấp, sổ đăng ký hợp đồng, CRM, lịch vận chuyển. Tất cả song song. Dưới hai giây.
+ARIA-B được gắn trực tiếp lên khung máy, nằm lọt thỏm giữa vỏ hộp số và ống dẫn dầu. Mười bảy luồng dữ liệu từ các cảm biến liên tục truyền về. Tám tháng qua, công việc duy nhất của nó là học thuộc lòng cỗ máy này — từ những lần khởi động, những đợt thay đổi tải trọng, cho đến chu kỳ tỏa nhiệt qua từng ca làm việc. ARIA-B đã xây dựng được một mô hình chuẩn xác và cực kỳ chi tiết về âm thanh cũng như độ rung của cỗ máy khi nó hoạt động khỏe mạnh.
 
-**Kiểm tra tồn kho:** Ổ bi chính xác SKF-6305-2RS — không còn đơn vị nào trong kho. Đơn vị cuối cùng đã được dùng hai tháng trước trong một chu kỳ bảo trì định kỳ. Không có lệnh đặt hàng lại nào được tạo từ đó đến nay.
+Lúc 2 giờ 47 phút sáng, dữ liệu thực tế không còn khớp với bản mẫu đó nữa.
 
-**Kiểm tra nhà cung cấp:** Công ty Kỹ Thuật Tiến Phát tại TP.HCM — thời gian giao hàng năm ngày, chưa được phê duyệt cho linh kiện cấp chính xác. Nhà cung cấp được chứng nhận Công ty TNHH Vòng Bi Phương Nam — mười hai đến mười bốn ngày làm việc, cần nhập khẩu.
+Đó không phải là một sự cố nổ tung hay gãy vỡ đột ngột. Chẳng có tiếng còi báo động nào réo lên. Chỉ là một sự sai lệch rất chậm, diễn ra đồng thời trên cả ba kênh cảm biến: biên độ rung tăng thêm 0,003mm, tần số âm thanh lệch đi 11Hz, và nhiệt độ ổ bi nhích lên 1,8°C. Những con số này vẫn nằm gọn trong ngưỡng an toàn của nhà máy. Hệ thống báo động thông thường vẫn im lìm. Trong chuyến tuần tra, Minh không hề nghe thấy gì lạ. Bảng đếm sản lượng vẫn nhảy số đều đặn.
 
-**Kiểm tra hợp đồng:** Một hợp đồng đang hiệu lực phụ thuộc vào sản lượng từ Dây Chuyền B — JP-2024-441, Nakamura Plastics Co., Osaka. 4.800 vỏ nhựa chính xác. Hạn giao hàng: ngày 14 tháng 10. Mười một ngày nữa. Điều khoản phạt: 28.000.000 yên nếu giao trễ. Dây Chuyền B đóng góp 34% tổng sản lượng hàng ngày.
+Tuy nhiên, dựa trên kho dữ liệu sự cố từng được học, ARIA-B nhận ra ngay hình hài của kiểu tín hiệu này. Đó là tiếng kêu cứu chớm nở của một chiếc ổ bi đang bắt đầu rệu rã.
 
-**Mô hình rủi ro:** Nếu ổ bi hỏng mà không có hàng thay thế — ngừng máy không có kế hoạch ít nhất mười tám đến ba mươi sáu giờ. Dự kiến thiếu hụt: 380 đến 760 đơn vị. Bù đắp bằng tăng giờ trên Dây Chuyền A và Dây Chuyền C: chỉ một phần. Phạt hợp đồng: gần như chắc chắn.
+Nó soạn một cảnh báo và gửi đi.
 
-NEXUS chạy con số quan trọng nhất. Nhà cung cấp được chứng nhận cần mười hai đến mười bốn ngày. Hạn chót là mười một ngày nữa. Một đơn hàng thông thường sẽ không đến kịp. Cửa sổ thời gian để tìm nguồn thay thế — nhà phân phối khu vực, đại lý được chứng nhận — đang mở, nhưng đang đóng dần. Mỗi giờ trì hoãn là một giờ mà Lan sẽ không còn để thực hiện cuộc gọi vào buổi sáng.
+> **[ARIA-B → NEXUS]** 02:47:13
+>
+> **THIẾT BỊ:** Dây chuyền B — Máy ép trục xoay — Ổ bi truyền động chính (Vị trí số 3)
+>
+> **DẤU HIỆU:** Sai lệch vi mô đồng thời trên 3 cảm biến
+> - Độ rung: tăng 0,003mm biên độ (Ngưỡng báo động: 0,01mm)
+> - Âm thanh: lệch 11Hz so với mốc chuẩn (Ngưỡng báo động: 40Hz)
+> - Nhiệt độ: tăng 1,8°C so với mốc chuẩn (Ngưỡng báo động: 5°C)
+>
+> **MÔ HÌNH NHẬN DIỆN:** Khớp với giai đoạn đầu của việc mòn vòng bi
+>
+> **ĐỘ TIN CẬY:** 84%
+>
+> **MỨC ĐỘ ƯU TIÊN:** THẤP — Sản lượng chưa bị ảnh hưởng, chưa dự đoán hỏng hóc ngay lập tức
+>
+> **ĐỀ XUẤT:** Cần kiểm tra trong vòng 7–10 ngày tới
+>
+> **TRẠNG THÁI:** Đang tiếp tục theo dõi bình thường. Chờ chỉ thị từ NEXUS.
 
-Điều mà ARIA-B đã đánh dấu là THẤP vừa trở thành thứ hoàn toàn khác.
+ARIA-B gửi thông báo rồi quay lại với việc lắng nghe. Thế là xong phần việc của nó. Những gì xảy ra tiếp theo do hệ thống cấp cao hơn quyết định.
 
-```
-[NEXUS — PHÂN LOẠI LẠI NỘI BỘ]  02:47:44
-MỨC ĐỘ BAN ĐẦU   : THẤP
-PHÂN LOẠI LẠI    : NGHIÊM TRỌNG
-LÝ DO             :
-  - Tồn kho bằng không. Không đặt hàng lại trong 2 tháng.
-  - Thời gian giao hàng được chứng nhận 12–14 ngày. Hạn chót trong 11 ngày.
-  - Đường đặt hàng thông thường sẽ không đến kịp.
-  - Dây Chuyền B = 34% sản lượng. Hợp đồng JP-2024-441 đang bị đe dọa.
-  - Rủi ro phạt: 28.000.000 yên
-HÀNH ĐỘNG XẾP HÀNG:
-  - Cảnh báo bảng điều khiển → Giám sát ca đêm (ngay lập tức, cần phê duyệt)
-  - Tóm tắt tìm nguồn → Trưởng cung ứng Lan (6 giờ sáng)
-  - Phiếu nhiệm vụ → Kỹ sư cao cấp Tuấn (6 giờ sáng)
-  - Ghi chú tình huống → Giám đốc Hương (6 giờ sáng, để nắm bắt)
-  - Bản thảo → Thông tin khách hàng (chờ, chưa gửi)
-  - Đang chờ phê duyệt con người → Kế hoạch điều chỉnh sản xuất
-```
+---
 
-NEXUS không tự hành động. Chưa. Có những lệnh nó có thể gửi — cấu hình vận hành máy, khoảng thời gian đọc cảm biến, cờ bảo trì. Nhưng nó sẽ không gửi chúng nếu thiếu con người trong vòng lặp.
+### Phần Ba: NEXUS Chắp Nối Dữ Liệu
 
-Con người đó, lúc này, chính là Minh.
+NEXUS nhận được cảnh báo từ ARIA-B vào lúc 2 giờ 47 phút 14 giây sáng.
+
+Nếu như ARIA-B chỉ biết rõ một cỗ máy, thì NEXUS thấu hiểu mọi thứ. Ngay lập tức, nó truy xuất dữ liệu từ hàng loạt hệ thống: phần mềm ERP, kho hàng, danh sách nhà cung cấp, sổ quản lý hợp đồng, CRM và lịch trình vận chuyển. Tất cả diễn ra đồng thời, mất chưa tới hai giây.
+
+**Kiểm tra kho hàng:** Ổ bi chính xác SKF-6305-2RS — Số lượng tồn kho: 0. Chiếc cuối cùng đã được dùng cách đây hai tháng trong một đợt bảo dưỡng định kỳ. Từ đó đến nay chưa có lệnh đặt mua bổ sung.
+
+**Kiểm tra nhà cung cấp:** Công ty Kỹ Thuật Tiến Phát tại TP.HCM — thời gian giao hàng 5 ngày, nhưng chưa được chứng nhận chất lượng cho linh kiện yêu cầu độ chính xác cao. Nhà cung cấp đạt chuẩn duy nhất là Công ty TNHH Vòng Bi Phương Nam — cần 12 đến 14 ngày làm việc do hàng phải nhập khẩu.
+
+**Rà soát hợp đồng:** Có một hợp đồng quan trọng đang phụ thuộc vào sản lượng của Dây chuyền B — Mã hợp đồng JP-2024-441, đối tác Nakamura Plastics Co. tại Osaka. Yêu cầu: 4.800 vỏ nhựa chất lượng cao. Hạn giao hàng: Ngày 14 tháng 10 (chỉ còn 11 ngày nữa). Mức phạt nếu trễ tiến độ: 28.000.000 Yên. Dây chuyền B hiện gánh 34% tổng sản lượng mỗi ngày của nhà máy.
+
+**Đánh giá rủi ro:** Nếu ổ bi hỏng hẳn mà không có linh kiện thay thế, máy sẽ chết đứng đột ngột từ 18 đến 36 giờ. Ước tính lượng hàng thiếu hụt: 380 đến 760 sản phẩm. Việc ép hai Dây chuyền A và C tăng ca chỉ bù đắp được một phần nhỏ. Nguy cơ vi phạm hợp đồng gần như là chắc chắn.
+
+NEXUS tính toán yếu tố chí mạng nhất: Thời gian. Nhà cung cấp đạt chuẩn cần ít nhất 12 ngày để giao hàng, trong khi hạn chót là 11 ngày tới. Mua hàng theo quy trình thông thường chắc chắn không kịp. Vẫn còn cơ hội xoay xở từ các đại lý nhỏ lẻ trong khu vực, nhưng cánh cửa thời gian đang khép lại rất nhanh. Cứ mỗi giờ trôi qua lúc này là một giờ mà chị Lan – Trưởng phòng Cung ứng – mất đi cơ hội gọi điện tìm nguồn hàng vào sáng mai.
+
+Vấn đề mà ARIA-B vừa đánh giá là "THẤP", nay đã biến thành một mối đe dọa thực sự.
+
+> **[NEXUS — TỰ ĐỘNG ĐÁNH GIÁ LẠI MỨC ĐỘ RỦI RO]** 02:47:44
+>
+> **MỨC ĐỘ BAN ĐẦU:** THẤP
+>
+> **MỨC ĐỘ CẬP NHẬT:** NGHIÊM TRỌNG
+>
+> **LÝ DO:**
+> - Hàng tồn kho bằng 0. Không có lệnh đặt mua trong 2 tháng qua.
+> - Đối tác đạt chuẩn giao hàng mất 12–14 ngày. Hạn chót hợp đồng là 11 ngày tới.
+> - Đặt hàng theo quy trình thông thường sẽ trễ tiến độ.
+> - Dây chuyền B đảm nhận 34% sản lượng. Hợp đồng JP-2024-441 đang gặp rủi ro lớn.
+> - Nguy cơ đền bù hợp đồng: 28.000.000 Yên.
+>
+> **CHUỖI HÀNH ĐỘNG ĐỀ XUẤT:**
+> - Đẩy cảnh báo lên Bảng điều khiển → Trưởng ca đêm (Cần phê duyệt ngay)
+> - Gửi yêu cầu tìm nguồn hàng khẩn cấp → Trưởng phòng Cung ứng Lan (6:00 sáng)
+> - Gửi phiếu kiểm tra máy móc → Kỹ sư Tuấn (6:00 sáng)
+> - Gửi báo cáo tóm tắt → Giám đốc Hương (6:00 sáng, để nắm tình hình)
+> - Chuẩn bị sẵn thư xin lỗi khách hàng (Đưa vào trạng thái chờ, chưa gửi)
+> - Đợi con người phê duyệt phương án điều chỉnh sản lượng.
+
+NEXUS không tự ý ra tay. Ít nhất là lúc này. Nó có thể gửi các lệnh can thiệp ngay lập tức — như thay đổi thông số máy hay tăng tần suất đọc cảm biến. Nhưng nó được lập trình để không bao giờ tự ý hành động nếu thiếu sự chấp thuận của con người.
+
+Và con người đó, lúc này, chính là Minh.
 
 ---
 
 ### Phần Bốn: Minh Và Bảng Điều Khiển
 
-Phòng điều khiển cách sàn xưởng hai mươi mét. Minh đang viết nhật ký ca thì bảng điều khiển thay đổi.
+Phòng điều khiển nằm cách khu vực sản xuất chừng hai mươi mét. Minh đang lúi húi ghi chép sổ giao ca thì màn hình Bảng điều khiển bỗng nhiên thay đổi.
 
-Không có tiếng nhấp nháy. Không có âm thanh. Màn hình ca đêm — thường là bố cục số xanh yên tĩnh — giờ hiện một nhịp màu hổ phách đều đặn trên Dây Chuyền B. Một thẻ thông báo xuất hiện ở góc trên phải.
+Không hề có đèn chớp hay tiếng còi chói tai. Màn hình ca đêm — vốn luôn hiển thị các con số màu xanh dịu mắt — giờ đây xuất hiện một nhịp đập màu cam nhạt đều đặn ở khu vực Dây chuyền B. Một khung thông báo bật lên ở góc phải màn hình.
 
-Anh đẩy ghế lại gần và đọc.
-
----
-
-> **NEXUS CẢNH BÁO — 02:48 SA** | *Giao diện Giám sát Ca Đêm*
->
-> **Chuyện gì đang xảy ra:** ARIA-B phát hiện mòn ổ bi giai đoạn đầu trên máy ép xoay trục Dây Chuyền B. Máy đang vận hành bình thường ngay lúc này. Đây chưa phải tình huống khẩn cấp — nhưng chưa thôi.
->
-> **Tại sao điều này quan trọng đêm nay:** Chúng ta không có ổ bi thay thế được chứng nhận trong kho. Nhà cung cấp được chứng nhận cần 12–14 ngày để giao — dài hơn hạn chót hợp đồng cho phép. Con đường duy nhất để giải quyết kịp thời là tìm nguồn thay thế ngay đầu buổi sáng. Mỗi giờ chúng ta trì hoãn bây giờ là một giờ mà chị Lan sẽ không còn khi bắt đầu gọi điện lúc 6 giờ sáng.
->
-> **NEXUS cần quyết định từ anh:**
->
-> 🔴 **1. Phê duyệt cờ tìm nguồn khẩn cấp**
->
-> NEXUS sẽ đánh dấu đây là mua hàng Ưu tiên 1 cho ca sáng. Chị Lan sẽ nhận tóm tắt đầy đủ và phiếu nhiệm vụ lúc 6 giờ sáng. Đêm nay không tốn gì.
->
-> 🟠 **2. Phê duyệt chế độ bảo hộ Dây Chuyền B**
->
-> NEXUS sẽ chỉ thị ARIA-B giảm 30% RPM của Dây Chuyền B và tăng tần suất đọc cảm biến lên mỗi 30 giây. Điều này làm chậm tiến trình mòn ổ bi và giảm nguy cơ hư hỏng tăng tốc qua đêm. Dự kiến giảm sản lượng: 260 đơn vị/ngày.
->
-> 🟠 **3. Phê duyệt nâng sản lượng — Dây Chuyền A và Dây Chuyền C**
->
-> Để bù đắp sản lượng mất từ Dây Chuyền B, NEXUS đề xuất nâng cấu hình vận hành Dây Chuyền A và Dây Chuyền C. ARIA-A và ARIA-C đã xác nhận còn dư năng lực. Nếu anh phê duyệt, NEXUS sẽ trước tiên gửi phiếu nhiệm vụ cho các anh Hùng và Thảo để giải thích tình huống và thay đổi sắp diễn ra trên máy của họ. Chỉ khi mỗi người xác nhận đã đọc và sẵn sàng, NEXUS mới gửi lệnh cơ học. Không máy nào thay đổi tốc độ cho đến khi vận hành viên đó nói được.
->
-> 🟡 **4. Bàn giao buổi sáng**
->
-> Phiếu nhiệm vụ cho anh Tuấn và chị Lan sẽ sẵn sàng lúc 6 giờ sáng. Ghi chú tình huống sẽ gửi cho Giám đốc Hương. Không cần hành động từ anh.
->
-> *Nếu tất cả được phê duyệt:* Hợp đồng JP-2024-441 được đảm bảo. Chị Lan có tối đa thời gian tìm nguồn hàng. Ổ bi được bảo vệ suốt phần còn lại của đêm.
->
-> *Nếu không có gì được phê duyệt đêm nay:* Ca sáng mất 3–4 giờ tìm nguồn hàng. Giao hàng được chứng nhận trước ngày 14 tháng 10 trở nên khó khăn hơn đáng kể.
->
-> **[ PHÊ DUYỆT TẤT CẢ ]** &nbsp;&nbsp; **[ XEM XÉT TỪNG MỤC ]** &nbsp;&nbsp; **[ LEO THANG LÊN QUẢN LÝ ]**
+Anh kéo ghế lại gần và chăm chú đọc.
 
 ---
 
-Minh đọc hai lần.
+> **CẢNH BÁO TỪ NEXUS — 02:48 SA** | *Giao diện Trưởng ca đêm*
+>
+> **Tình trạng:** ARIA-B vừa phát hiện dấu hiệu bào mòn ở giai đoạn đầu của ổ bi trên Dây chuyền B. Hiện tại máy vẫn đang hoạt động bình thường, chưa phải là tình huống khẩn cấp — nhưng sẽ sớm trở nên tồi tệ.
+>
+> **Tại sao cần xử lý ngay đêm nay:** Trong kho hiện không còn ổ bi thay thế đạt chuẩn. Nhà cung cấp chính thức cần tới 12–14 ngày để giao hàng — chậm hơn so với hạn chót của hợp đồng JP-2024-441. Giải pháp duy nhất là phải khẩn trương tìm nguồn hàng thay thế ngay đầu giờ sáng. Sự chậm trễ lúc này sẽ tước đi thời gian quý giá của chị Lan để gọi điện xử lý lúc 6 giờ sáng.
+>
+> **NEXUS cần anh phê duyệt các phương án sau:**
+>
+> 🔴 **1. Kích hoạt cờ "Tìm nguồn hàng khẩn cấp"**
+>
+> Đưa việc mua ổ bi lên mức ưu tiên cao nhất cho ca sáng. Chị Lan sẽ nhận được báo cáo tóm tắt và yêu cầu công việc ngay lúc 6 giờ sáng. Quyết định này không tốn kém gì lúc này.
+>
+> 🟠 **2. Bật "Chế độ bảo vệ" cho Dây chuyền B**
+>
+> NEXUS sẽ lệnh cho ARIA-B giảm 30% tốc độ quay (RPM) của Dây chuyền B và tăng tần suất đọc cảm biến lên 30 giây một lần. Việc này giúp làm chậm tiến trình bào mòn ổ bi và giảm nguy cơ hỏng hóc đột ngột trong đêm. Sản lượng dự kiến giảm: 260 sản phẩm/ngày.
+>
+> 🟠 **3. Tăng công suất bù trừ cho Dây chuyền A và C**
+>
+> Để bù đắp lượng hàng thiếu hụt từ Dây chuyền B, NEXUS đề xuất nâng thông số vận hành của Dây chuyền A và C. ARIA-A và ARIA-C đã xác nhận vẫn còn dư công suất. Nếu anh đồng ý, hệ thống sẽ gửi thông báo cho anh Hùng và chị Thảo để giải thích tình hình. Chỉ khi họ đọc và bấm xác nhận "đã sẵn sàng", NEXUS mới truyền lệnh đổi tốc độ xuống máy. Không máy nào thay đổi tốc độ nếu thợ vận hành chưa cho phép.
+>
+> 🟡 **4. Bàn giao ca sáng**
+>
+> Phiếu công việc cho kỹ sư Tuấn và chị Lan sẽ được tự động gửi lúc 6 giờ sáng. Báo cáo tình huống cũng sẽ được gửi tới Giám đốc Hương. Anh không cần thao tác thêm.
+>
+> *Nếu anh phê duyệt tất cả:* Hợp đồng JP-2024-441 sẽ được đảm bảo. Bộ phận cung ứng có tối đa thời gian tìm hàng. Cỗ máy đang lỗi sẽ được bảo vệ cho đến hết đêm.
+>
+> *Nếu từ chối:* Ca sáng sẽ mất 3–4 giờ quý giá chỉ để phân tích tìm nguồn hàng. Việc giao hàng đúng hạn sẽ trở nên cực kỳ khó khăn.
+>
+> **[ PHÊ DUYỆT TẤT CẢ ]** &nbsp;&nbsp; **[ XEM XÉT TỪNG MỤC ]** &nbsp;&nbsp; **[ BÁO CÁO LÊN QUẢN LÝ ]**
 
-Anh không phải kỹ sư. Anh không thể nói với bạn vòng đua ổ bi là gì hay tại sao 11Hz lại quan trọng. Nhưng bảng điều khiển không yêu cầu anh biết những điều đó. Nó đã trình bày tình huống theo cách một đồng nghiệp tốt sẽ làm — đây là vấn đề, đây là những gì tôi không thể làm nếu thiếu anh, đây là những gì xảy ra dù thế nào.
+---
+
+Minh đọc đi đọc lại thông báo đến hai lần.
+
+Là dân kỹ thuật, anh thừa hiểu sự nghiêm trọng của một vòng bi bị mòn rỗ, nhưng việc bắt được độ "lệch 11Hz" bằng tai người giữa xưởng máy ồn ào là điều không tưởng. Thay vì ném vào mặt anh một mớ dữ liệu thô, hệ thống đã phân tích tình huống rành mạch hệt như một người đồng nghiệp tận tâm: Đây là rắc rối, đây là những việc tôi không thể làm nếu vắng anh, và đây là hậu quả nếu chúng ta không hành động.
 
 Anh nhấp **[ XEM XÉT TỪNG MỤC ]**.
 
-Không phải vì anh nghi ngờ. Mà vì anh thận trọng. Ba năm làm ca đêm đã dạy anh rằng phê duyệt mà không đọc kỹ là cách những vấn đề nhỏ trở thành những thứ đắt tiền.
+Không phải vì anh nghi ngờ máy móc, mà bởi tính anh vốn cẩn trọng. Kinh nghiệm ba năm trực đêm dạy anh rằng: nhắm mắt bấm duyệt bừa chính là cách nhanh nhất biến một lỗi nhỏ thành một thảm họa đắt tiền.
 
-Anh phê duyệt cờ tìm nguồn trước. Cái đó đêm nay không tốn gì.
+Đầu tiên, anh duyệt mục tìm nguồn hàng khẩn cấp. Quyết định này không tốn gì lúc này.
 
-Anh đọc thẻ chế độ bảo hộ Dây Chuyền B. Giảm 30% RPM. Tăng đọc cảm biến mỗi 30 giây. Anh nhìn qua vách kính ra Dây Chuyền B, vẫn đang chạy đều đặn dưới sàn xưởng. Chạy chậm hơn sẽ không gây hại. Anh phê duyệt.
+Tiếp đến, anh đọc kỹ phần chế độ bảo vệ cho Dây chuyền B. Giảm 30% tốc độ, tăng độ nhạy cảm biến. Minh nhìn qua vách kính trong suốt, hướng mắt về cỗ máy B đang nhịp nhàng nhả hàng dưới xưởng. Chạy chậm lại một chút sẽ không gây hại gì. Anh bấm phê duyệt.
 
-Phần nâng sản lượng là cái khiến anh dừng lại. Điều chỉnh hai dây chuyền sản xuất giữa đêm khuya, không có kỹ sư trên sàn — đó là trách nhiệm thật sự.
+Tuy nhiên, đề xuất tăng tốc độ hai máy còn lại khiến anh khựng lại. Thay đổi thông số của dây chuyền sản xuất vào giữa đêm khuya khoắt, không có kỹ sư túc trực trên xưởng — đó là một trách nhiệm không hề nhỏ.
 
-Anh cầm bộ đàm lên. "Hùng. Thảo. Nghe không?"
+Minh cầm bộ đàm lên. "Hùng. Thảo. Hai người nghe rõ không?"
 
-Hai tiếng bấm.
+Hai tiếng 'rẹt rẹt' vang lên báo hiệu họ đang nghe.
 
-"Các anh sẽ nhận phiếu nhiệm vụ trên máy tính bảng một chút nữa. Đọc toàn bộ. Khi nào sẵn sàng cho dây chuyền của mình chạy nhanh hơn, xác nhận lại với tôi. Đừng xác nhận cho đến khi thực sự sẵn sàng. Xác nhận của các anh là thứ báo cho NEXUS thực hiện thay đổi — không máy nào di chuyển cho đến khi các anh nói được."
+"Lát nữa hai người sẽ nhận được thông báo điều chỉnh máy. Đọc cho kỹ nhé. Khi nào chắc chắn dây chuyền của mình chạy nhanh hơn được thì hãy bấm xác nhận. Nhớ là chỉ bấm khi đã thực sự sẵn sàng. Cú click của hai người là chìa khóa để hệ thống chạy — máy sẽ không đổi tốc độ nếu các cậu chưa cho phép đâu."
 
-Hai tiếng bấm nữa.
+Lại có hai tiếng 'rẹt rẹt' xác nhận.
 
 Anh nhấp **[ PHÊ DUYỆT ]**.
 
 ---
 
-### Phần Năm: Các Lệnh Đi Xuống
+### Phần Năm: Máy Móc Lên Tiếng
 
-Sự phê duyệt của Minh kích hoạt ba việc — nhưng không phải tất cả cùng lúc, và không theo cùng thứ tự.
+Cái gật đầu của Minh lập tức kích hoạt ba quy trình — nhưng không diễn ra đồng thời, cũng chẳng theo cùng một cách.
 
-Dây Chuyền B trước tiên. Làm chậm máy không gây rủi ro cho vận hành viên đứng bên cạnh. NEXUS gửi lệnh chế độ bảo hộ xuống ARIA-B ngay lập tức, không cần chờ ai.
+Dây chuyền B được ưu tiên trước nhất. Việc giảm tốc độ không gây ra bất kỳ rủi ro nào cho người thợ đang đứng cạnh máy. Do đó, NEXUS truyền thẳng lệnh 'chế độ bảo vệ' xuống ARIA-B tức thì, không cần phải chờ đợi ai.
 
-```
-[NEXUS → ARIA-B]  03:04:17
-LỆNH   : Kích hoạt Chế độ Bảo hộ
-           Giảm RPM truyền động chính 30%
-           Tăng đọc cảm biến: mỗi 30 giây
-           Ngưỡng cảnh báo: nhiệt độ ổ bi +4°C so với cơ sở → báo ngay
-           Tắt báo động sàn trừ khi vượt ngưỡng
-ARIA-B : Đã xác nhận. Đã áp dụng thông số. Nhiệt độ ổ bi hiện tại: +1,8°C
-           so với cơ sở. Ổn định. Đang theo dõi.
-```
+> **[NEXUS → ARIA-B]** 03:04:17
+>
+> **LỆNH:** Kích hoạt Chế độ Bảo vệ — Giảm 30% tốc độ truyền động chính. Đọc cảm biến: Mỗi 30 giây. Ngưỡng báo động khẩn cấp mới: Nhiệt độ ổ bi tăng quá 4°C so với mốc chuẩn → Báo động ngay. Tắt còi báo động xưởng trừ khi vượt ngưỡng.
+>
+> **ARIA-B:** Đã nhận lệnh. Đã áp dụng thông số. Nhiệt độ ổ bi hiện tại: +1,8°C. Ổn định. Đang tiếp tục theo dõi.
 
-Trên sàn xưởng, Dây Chuyền B không rung lên hay dừng lại. Máy ép chỉ đơn giản chuyển sang nhịp chậm hơn một chút — không thể nhận ra bằng mắt, vô hình với tai. Nhưng bên trong máy, tải trọng trên ổ bi đang mòn giảm xuống. Lượng nhiệt sinh ra giảm đi. Đồng hồ đếm ngược còn lại của nó kéo dài ra thêm một chút.
+Dưới xưởng, Dây chuyền B không hề giật cục hay dừng lại. Cỗ máy ép chỉ nhẹ nhàng chuyển sang một nhịp điệu thong thả hơn — mắt thường không thể nhận ra, tai người cũng chẳng thể nghe thấy. Thế nhưng, tận sâu bên trong lõi thép, áp lực đè lên chiếc ổ bi đang mòn đã được giảm tải. Lượng ma sát sinh nhiệt cũng ít đi. Chiếc đồng hồ đếm ngược báo tử của nó đã được kéo dài ra thêm một chút.
 
-Dây Chuyền A và Dây Chuyền C khác. Tăng tốc máy trong khi vận hành viên đang đứng bên cạnh mà không cảnh báo trước là mối nguy hiểm. NEXUS không gửi lệnh cơ học xuống ARIA-A và ARIA-C. Chưa. Nó gửi phiếu nhiệm vụ đến anh Hùng và Thảo trước — và sẽ chờ từng người xác nhận sẵn sàng trước khi đụng vào máy của họ.
+Tuy nhiên, với Dây chuyền A và C, quy trình hoàn toàn khác. Tăng tốc máy đột ngột mà không báo trước là một rủi ro an toàn lao động. NEXUS chưa gửi lệnh cơ học xuống ARIA-A và ARIA-C. Nó gửi phiếu thông báo đến màn hình của anh Hùng và chị Thảo trước — và kiên nhẫn đợi từng người xác nhận sẵn sàng thì mới chạm vào máy của họ.
 
 ---
 
-> **PHIẾU NHIỆM VỤ NEXUS — Thông báo Vận hành viên Ca Đêm**
+> **THÔNG BÁO TỪ NEXUS — Dành cho Thợ máy Ca đêm**
 >
-> Dây Chuyền A: Anh Hùng | Dây Chuyền C: Chị Thảo
+> **Người nhận:** Anh Hùng (Dây chuyền A) | Chị Thảo (Dây chuyền C)
 >
-> Gửi lúc: 03:05 SA | Được phê duyệt bởi: Giám sát Ca Đêm Minh
+> **Thời gian:** 03:05 SA | **Người duyệt:** Trưởng ca Minh
 >
-> *Yêu cầu hành động: Đọc và xác nhận trước khi dây chuyền của bạn thay đổi.*
+> *Yêu cầu: Vui lòng đọc kỹ và xác nhận trước khi hệ thống thay đổi thông số.*
 >
-> ARIA-B đã phát hiện dấu hiệu cảnh báo sớm trên ổ bi máy ép xoay trục Dây Chuyền B. Máy chưa hỏng — nhưng đang được chạy ở tốc độ giảm như biện pháp phòng ngừa trong khi ca sáng sắp xếp linh kiện thay thế.
+> **Lý do:** Hệ thống vừa phát hiện rủi ro hỏng hóc sớm tại ổ bi Dây chuyền B. Hiện máy B đã được chuyển sang chế độ chạy chậm để phòng ngừa, trong lúc chờ ca sáng lo linh kiện thay thế.
 >
-> Để đảm bảo tiến độ sản xuất, NEXUS cần tăng mục tiêu sản lượng trên Dây Chuyền A và Dây Chuyền C để bù đắp. Anh Minh đã phê duyệt. Mục tiêu mới của bạn ở dưới đây.
+> **Hành động:** Để đảm bảo tiến độ, trưởng ca Minh đã đồng ý tăng mục tiêu sản lượng cho Dây chuyền A và C để gánh phần hao hụt.
 >
-> **Dây chuyền của bạn sẽ KHÔNG thay đổi cho đến khi bạn xác nhận đã đọc và sẵn sàng.**
+> **LƯU Ý:** Dây chuyền của bạn sẽ **KHÔNG** thay đổi thông số cho đến khi bạn bấm xác nhận đã đọc và sẵn sàng. Sau khi xác nhận, máy sẽ tự động chuyển nhịp. Bạn không cần chỉnh tay. Hãy giám sát kỹ và báo ngay cho anh Minh nếu có điều gì bất thường.
 >
-> Sau khi bạn xác nhận, NEXUS sẽ gửi cấu hình vận hành mới xuống máy của bạn. Tốc độ chu kỳ sẽ tăng nhẹ. Bạn không cần điều chỉnh thủ công — máy sẽ tự chuyển tiếp. Việc của bạn là theo dõi như thường và báo ngay với anh Minh nếu có bất cứ điều gì trông hay nghe khác lạ.
+> - **Dây chuyền A** — Mục tiêu mới: **960 sản phẩm/ngày** (Tăng từ 820)
+> - **Dây chuyền C** — Mục tiêu mới: **940 sản phẩm/ngày** (Tăng từ 790)
 >
-> - Dây Chuyền A — mục tiêu mới: **960 đơn vị/ngày** (từ 820)
-> - Dây Chuyền C — mục tiêu mới: **940 đơn vị/ngày** (từ 790)
->
-> **[ XÁC NHẬN — TÔI ĐÃ ĐỌC VÀ DÂY CHUYỀN CỦA TÔI SẴN SÀNG ]**
+> **[ XÁC NHẬN — TÔI ĐÃ HIỂU VÀ SẴN SÀNG ]**
 
 ---
 
-Anh Hùng đọc phiếu, nhìn vào dây chuyền của mình, và nhấp xác nhận lúc 3 giờ 07 phút sáng.
+Anh Hùng lướt nhanh qua thông báo, liếc nhìn dây chuyền của mình một lượt rồi bấm nút xác nhận lúc 3 giờ 07 phút sáng.
 
-Ngay khi xác nhận của anh được ghi nhận, NEXUS gửi lệnh xuống ARIA-A.
+Ngay khi lệnh được ghi nhận, NEXUS thả thông số xuống ARIA-A.
 
-```
-[NEXUS → ARIA-A]  03:07:04
-LỆNH   : Cấu hình Vận hành Nâng cao
-           Mục tiêu sản lượng: 960 đơn vị/ngày (từ 820)
-           Thời gian chu kỳ: 89,5 giây (từ 98 giây)
-           Theo dõi rung động và nhiệt độ — báo mọi sai lệch trên 5%
-           Vận hành viên đã xác nhận sẵn sàng.
-ARIA-A : Đã xác nhận. Đã tải cấu hình. Đang chuyển tiếp.
-           Cập nhật sản lượng trong khoảng 12 phút.
-```
+> **[NEXUS → ARIA-A]** 03:07:04
+>
+> **LỆNH:** Áp dụng Cấu hình Tăng cường — Mục tiêu: 960 sp/ngày. Thời gian chu kỳ: 89,5 giây (giảm từ 98 giây). Giám sát chặt chẽ độ rung và nhiệt độ — báo cáo ngay nếu sai lệch quá 5%. Thợ máy đã xác nhận.
+>
+> **ARIA-A:** Đã nhận lệnh. Tải thông số mới thành công. Đang điều chỉnh nhịp độ. Sản lượng sẽ cập nhật sau khoảng 12 phút.
 
 Thảo xác nhận lúc 3 giờ 08 phút sáng. Cùng chuỗi thao tác.
 
-```
-[NEXUS → ARIA-C]  03:08:11
-LỆNH   : Cấu hình Vận hành Nâng cao
-           Mục tiêu sản lượng: 940 đơn vị/ngày (từ 790)
-           Thời gian chu kỳ: 91 giây (từ 99 giây)
-           Theo dõi rung động và nhiệt độ — báo mọi sai lệch trên 5%
-           Vận hành viên đã xác nhận sẵn sàng.
-ARIA-C : Đã xác nhận. Đã tải cấu hình. Đang chuyển tiếp.
-           Lưu ý: Nhiệt độ dầu làm mát hơi cao (+0,6°C so với cơ sở).
-           Trong ngưỡng bình thường. Đang theo dõi.
-```
+> **[NEXUS → ARIA-C]** 03:08:11
+>
+> **LỆNH:** Áp dụng Cấu hình Tăng cường — Mục tiêu: 940 sp/ngày. Thời gian chu kỳ: 91 giây (giảm từ 99 giây). Giám sát chặt chẽ độ rung và nhiệt độ. Thợ máy đã xác nhận.
+>
+> **ARIA-C:** Đã nhận lệnh. Tải thông số mới thành công. Cảnh báo nhẹ: Nhiệt độ dầu làm mát tăng nhẹ (+0,6°C) nhưng vẫn trong ngưỡng an toàn. Đang tiếp tục theo dõi.
 
-NEXUS ghi nhận lưu ý dầu làm mát của ARIA-C lặng lẽ. Không phải báo động. Chỉ là một sợi chỉ cần tiếp tục theo dõi.
+NEXUS âm thầm ghi nhận cảnh báo về nhiệt độ dầu của ARIA-C. Chưa đến mức báo động, đó chỉ là một thông số cần để mắt tới.
 
-Cả hai vận hành viên sau đó xác nhận lại với Minh qua bộ đàm — không phải vì NEXUS yêu cầu, mà vì Minh đã dặn họ. Đó là vòng lặp của anh để đóng lại, không phải của hệ thống.
+Cả hai người thợ sau đó dùng bộ đàm báo lại cho Minh — không phải do NEXUS yêu cầu, mà vì đó là nguyên tắc Minh luôn dặn anh em. Đó là quy trình khép kín của con người, nằm ngoài sự kiểm soát của hệ thống.
 
-Sự phân biệt đó quan trọng. ARIA-A và ARIA-C đã làm đúng chức năng — chờ lệnh, thực thi cơ học, báo lại. Chúng không biết hai vận hành viên vừa đọc một phiếu, hay một hợp đồng đang có nguy cơ, hay một ổ bi trên máy khác đang âm thầm chết dần. Chúng chỉ biết rằng một cấu hình vận hành đã đến kèm cờ xác nhận của vận hành viên, và chúng đang thực hiện nó.
+Cần phải hiểu rõ sự phân biệt này: ARIA-A và ARIA-C chỉ làm đúng chức phận của chúng: chờ lệnh, chạy máy và báo cáo. Chúng chẳng màng biết hai người thợ vừa đọc thông báo gì, cũng không cần biết có một bản hợp đồng tiền tỷ đang trước bờ vực rủi ro, hay chuyện một chiếc ổ bi bên cạnh đang chết dần. Trong thế giới nhị phân của chúng, chỉ có dòng lệnh kèm theo cờ xác nhận của con người, và nhiệm vụ của chúng là tuân thủ.
 
-Xác nhận của vận hành viên không phải thủ tục hình thức. Đó là cổng kiểm soát. Không máy nào di chuyển trên dây chuyền của một con người cho đến khi người đó sẵn sàng.
+Sự đồng ý của các vận hành viên không phải là một thủ tục cho có. Nó chính là "chốt chặn" an toàn. Không một máy móc nào được phép đổi tốc độ khi con người đứng cạnh chưa sẵn sàng.
 
-Đến 3 giờ 12 phút sáng, sàn xưởng đã lặng lẽ tái cơ cấu chính mình. Dây Chuyền B chậm hơn và được bảo vệ. Dây Chuyền A và Dây Chuyền C nhanh hơn, bù đắp. Con số sản lượng tổng gần như không thay đổi.
+Đến 3 giờ 12 phút sáng, toàn bộ phân xưởng đã tái cơ cấu thành công trong im lặng. Dây chuyền B chạy chậm rề rà cho an toàn. Dây chuyền A và C gầm gừ tăng tốc gánh vác. Tổng sản lượng đi ra gần như không suy suyển.
 
-Minh nhìn vào bảng điều khiển. Dây Chuyền B màu hổ phách — được kiểm soát, không bị báo động. Dây Chuyền A và Dây Chuyền C xanh sáng hơn bình thường. Dự báo giao hàng hợp đồng ở đầu màn hình hiện: **JP-2024-441 — 13 tháng 10 — Đúng tiến độ.**
+Minh ngả lưng nhìn màn hình. Dây chuyền B hiện màu cam — rủi ro đã được kiểm soát. Dây chuyền A và C sáng lên màu xanh đậm đầy năng lượng. Ở góc trên màn hình, dòng dự báo giao hàng vững chãi hiện lên: **Hợp đồng JP-2024-441 — Ngày 13/10 — Đúng tiến độ.**
 
 Anh viết mục nhật ký ca:
 
-> *03:14 SA — NEXUS leo thang cảnh báo mòn ổ bi trên Dây Chuyền B lên NGHIÊM TRỌNG dựa trên rủi ro hợp đồng và tồn kho. Đã xem xét từng hành động riêng lẻ. Phê duyệt: cờ tìm nguồn, chế độ bảo hộ Dây Chuyền B, nâng sản lượng Dây Chuyền A và Dây Chuyền C. NEXUS gửi phiếu nhiệm vụ cho Hùng và Thảo trước — lệnh máy chỉ được gửi xuống ARIA-A và ARIA-C sau khi mỗi vận hành viên xác nhận sẵn sàng. Dây Chuyền B đang ở chế độ bảo hộ. Tất cả dây chuyền đang chạy. Đã báo cáo cho kỹ sư và chuỗi cung ứng ca sáng. — Minh*
+> *03:14 SA — NEXUS nâng mức cảnh báo sự cố ổ bi ở Dây chuyền B lên mức NGHIÊM TRỌNG do rủi ro về tồn kho và tiến độ hợp đồng. Đã kiểm tra từng đề xuất. Quyết định phê duyệt: Mở cờ tìm nguồn hàng khẩn cấp, đưa Dây chuyền B vào chế độ bảo vệ, tăng sản lượng cho Dây chuyền A và C. NEXUS đã báo trước cho Hùng và Thảo thông qua phiếu công việc — lệnh máy chỉ được gửi xuống ARIA-A và ARIA-C sau khi nhân viên xác nhận sẵn sàng. Dây chuyền B hiện đang chạy an toàn. Cả ba dây chuyền đều hoạt động tốt. Đã ghi chú báo cáo cho kỹ sư và bộ phận mua hàng ca sáng. — Minh*
 
-Sau đó anh đi ra sàn xưởng và đi dạo như thường lệ, mỗi giờ một lần.
+Sau đó anh đội mũ bảo hộ, bước ra xưởng đi tuần tra một vòng như thường lệ, mỗi giờ một lần.
 
 *Có những thứ vẫn cần được nhìn bằng mắt người.*
 
 ---
 
-### Phần Sáu: Ca Sáng
+### Phần Sáu: Ca Sáng Tiếp Quản
 
-Tuấn đến lúc 5 giờ 55 phút sáng với bộ dụng cụ kiểm tra và sự tập trung lặng lẽ của người đã đọc bản tóm tắt qua đêm trên điện thoại trên tàu điện ngầm từ nhà.
+Tuấn, một kỹ sư bậc cao, có mặt tại nhà máy lúc 5 giờ 55 phút sáng. Trên tay anh là bộ đồ nghề kiểm tra, và khuôn mặt hiện rõ sự tập trung của một người đã đọc xong bản báo cáo sự cố từ lúc ngồi trên tàu điện ngầm.
 
-Giao diện bảng điều khiển của anh khác với của Minh. Đặc hơn. Kỹ thuật hơn. Biểu đồ xu hướng cảm biến của Dây Chuyền B đã mở và chờ sẵn — rung động, nhiệt độ và tần số âm thanh được vẽ đồ thị trong suốt 24 giờ qua. Bất thường giờ rõ ràng khi biết chỗ cần nhìn. Không phải đột biến. Một sự trôi dạt phức hợp đều đặn bắt đầu từ hôm qua, leo dần qua cả ba kênh cùng lúc.
+Giao diện làm việc của Tuấn khác hoàn toàn với màn hình của Minh. Nó dày đặc các biểu đồ xu hướng cảm biến của Dây chuyền B: độ rung, nhiệt độ và tần số âm thanh của 24 giờ qua được vẽ thành những đường đồ thị chi tiết. Với đôi mắt nhà nghề, sự bất thường lập tức hiện rõ. Không phải là những bước sóng nhấp nhô đột ngột, mà là một sự chệch hướng từ từ nhưng đồng đều bắt đầu từ hôm qua, nhích dần lên trên cả ba biểu đồ.
 
-Phiếu nhiệm vụ của anh nằm trên đầu hàng đợi.
-
----
-
-> **PHIẾU NHIỆM VỤ NEXUS — T-0601**
->
-> Giao cho: Tuấn, Kỹ sư Cao cấp
->
-> Ưu tiên: CAO | Tạo lúc: 02:48 SA, ngày 3 tháng 10
->
-> **Nhiệm vụ:** Kiểm tra Ổ bi Truyền động Chính, Máy ép Xoay trục Dây Chuyền B, Vị trí 3
->
-> **Bối cảnh:** ARIA-B phát hiện sai lệch vi mô phức hợp phù hợp với mòn ổ bi giai đoạn đầu lúc 02:47 SA. Giám sát ca đêm Minh đã phê duyệt tất cả biện pháp bảo hộ lúc 03:04 SA. Dây Chuyền B đã chạy ở chế độ bảo hộ từ đó — giảm 30% RPM, đọc cảm biến mỗi 30 giây.
->
-> **Cần làm:** Dừng Dây Chuyền B để kiểm tra. Mở vỏ máy ép và đánh giá ổ bi trực tiếp. Ghi lại tình trạng và chụp ảnh.
->
-> **Bối cảnh quan trọng:** Không có linh kiện thay thế được chứng nhận trong kho. Chị Lan đang xử lý vấn đề tìm nguồn sáng nay. Đánh giá của anh sẽ quyết định Dây Chuyền B có thể tiếp tục ở chế độ bảo hộ cho đến khi linh kiện đến, hay cần dừng hoàn toàn.
->
-> **Báo cáo kết quả cho:** Anh Khoa và bảng điều khiển NEXUS trước 9 giờ sáng.
+Phiếu nhiệm vụ của anh nằm ngay trên đầu danh sách.
 
 ---
 
-Tuấn dừng Dây Chuyền B lúc 6 giờ 20 phút sáng và mở vỏ máy ép.
-
-Ổ bi chính xác như mẫu của ARIA-B đã gợi ý — mòn rỗ giai đoạn đầu trên vòng đua ngoài, những hố nhỏ phân bố trên khoảng mười lăm phần trăm chu vi. Loại tổn thương mỏi không nhìn thấy được trong quá trình vận hành bình thường, không nghe thấy được giữa tiếng ồn sàn xưởng, và hoàn toàn không thể phát hiện nếu không tháo máy ra hoặc không có một AI đã lắng nghe nó tám tháng.
-
-Máy có thể tiếp tục ở chế độ bảo hộ. Nhưng tổn thương là thật, và nó không tự dừng lại.
-
-Anh chụp ảnh, ghi kết quả, và cập nhật phiếu nhiệm vụ.
-
-**Tình trạng: [ ✓ ] Cần Thay sớm — chế độ bảo hộ khả thi ngắn hạn. Không vận hành tải đầy.**
-
-NEXUS nhận xác nhận lúc 6 giờ 41 phút sáng và cập nhật trạng thái tình huống từ *dự đoán* sang *đã xác nhận*. Công việc tìm nguồn chị Lan đang làm vừa trở thành bắt buộc hoàn toàn.
+> **PHIẾU YÊU CẦU TỪ NEXUS — Mã: T-0601**
+>
+> **Người tiếp nhận:** Tuấn, Kỹ sư Bậc cao
+>
+> **Độ ưu tiên:** CAO | **Tạo lúc:** 02:48 SA, ngày 03/10
+>
+> **Nhiệm vụ:** Kiểm tra trực tiếp Ổ bi truyền động chính, Máy ép Dây chuyền B, Vị trí số 3.
+>
+> **Bối cảnh:** ARIA-B phát hiện lỗi bào mòn sớm. Trưởng ca đêm đã cho máy chạy chậm ở chế độ an toàn từ 03:04 SA.
+>
+> **Yêu cầu:** Dừng hẳn Dây chuyền B. Tháo vỏ hộp số và kiểm tra bằng mắt thường. Chụp ảnh đánh giá mức độ hỏng hóc.
+>
+> **Lưu ý quan trọng:** Kho đang hết linh kiện đạt chuẩn. Trưởng phòng Cung ứng đang ráo riết tìm nguồn hàng sáng nay. Đánh giá của anh sẽ quyết định xem Dây chuyền B có thể gồng gánh tiếp ở chế độ chạy chậm cho tới khi hàng về, hay buộc phải dừng hẳn hoàn toàn.
+>
+> **Báo cáo kết quả cho:** Giám đốc Sản xuất Khoa và hệ thống NEXUS trước 9 giờ sáng.
 
 ---
 
-### Phần Bảy: Lan Và Cuộc Gọi
+Tuấn lập tức cho dừng Dây chuyền B lúc 6 giờ 20 phút và mở nắp hộp truyền động.
 
-Lan đến lúc 6 giờ 03 phút sáng, đọc tóm tắt qua đêm khi đi từ bãi đỗ xe vào, và đã ở trước màn hình làm việc trước khi cốc cà phê pha xong.
+Đúng như dự đoán của hệ thống — vòng ngoài của ổ bi đã xuất hiện những vết rỗ li ti, trải dài trên khoảng 15% bề mặt. Đây là kiểu "tổn thương ngầm" do mỏi kim loại, không thể nhìn thấy bằng mắt khi máy đang chạy, không thể nghe thấy qua tiếng ồn của xưởng, và gần như vô phương phát hiện nếu không tháo tung máy ra — hoặc nếu không có một AI chuyên tâm lắng nghe nhịp đập của nó ròng rã suốt tám tháng trời.
 
-Tóm tắt tìm nguồn của NEXUS mở sẵn và chờ chị.
+Máy vẫn có thể tiếp tục chạy ở chế độ an toàn. Nhưng tổn thương là thật, và nó không thể tự lành lại.
+
+Anh chụp ảnh, ghi kết quả, và cập nhật tình trạng lên phiếu công việc.
+
+**Tình trạng: [ ✓ ] Cần Thay sớm — chế độ chạy chậm vẫn khả thi trong ngắn hạn. Tuyệt đối không cho vận hành tối đa công suất.**
+
+NEXUS nhận báo cáo lúc 6 giờ 41 phút sáng và chính thức cập nhật trạng thái sự cố từ *dự đoán* sang *đã xác nhận*. Công việc tìm nguồn hàng của chị Lan giờ đây trở thành nhiệm vụ có tính bắt buộc hoàn toàn.
 
 ---
 
-> **TÓM TẮT TÌM NGUỒN NEXUS — 06:00 SA** | *Trưởng Chuỗi Cung Ứng — Lan*
+### Phần Bảy: Chị Lan Vào Cuộc
+
+Chị Lan đến văn phòng lúc 6 giờ 03 phút sáng. Chị vừa đi bộ từ bãi đỗ xe vào vừa lướt điện thoại đọc báo cáo, rồi đứng thẳng trước màn hình làm việc ngay cả khi ly cà phê còn chưa kịp nhấp ngụm nào.
+
+Bảng tóm tắt tìm nguồn hàng từ NEXUS đã mở sẵn.
+
+---
+
+> **TÓM TẮT TÌM NGUỒN HÀNG — 06:00 SA** | *Trưởng phòng Cung ứng: Lan*
 >
-> **Linh kiện cần:** SKF-6305-2RS, cấp chính xác, được chứng nhận
+> **Linh kiện:** Ổ bi SKF-6305-2RS, chuẩn độ chính xác cao, có giấy chứng nhận.
 >
-> **Số lượng:** tối thiểu 1 đơn vị (khuyến nghị đặt 3 để lập tồn kho tối thiểu)
+> **Số lượng:** Cần tối thiểu 1 chiếc (Khuyến nghị đặt 3 chiếc để lấp đầy kho dự trữ).
 >
-> **Hạn giao hàng:** chậm nhất ngày 12 tháng 10. Sớm hơn thì càng tốt. Còn 9 ngày.
+> **Hạn chót phải có hàng:** Chậm nhất ngày 12 tháng 10. Sớm hơn thì càng tốt. Còn 9 ngày.
 >
-> **Đường tiêu chuẩn — không khả thi:**
+> **Kênh đối tác truyền thống — KHÔNG KHẢ THI:**
 >
-> Công ty TNHH Vòng Bi Phương Nam (được chứng nhận): 12–14 ngày làm việc. Trễ hạn.
+> Công ty TNHH Vòng Bi Phương Nam cần 12–14 ngày làm việc. Sẽ làm trễ tiến độ.
 >
-> **Phương án NEXUS đã xác định:**
+> **Các phương án thay thế do NEXUS đề xuất:**
 >
 > | | Phương án A | Phương án B | Phương án C |
 > |---|---|---|---|
-> | Nhà cung cấp | Kỹ Thuật Tiến Phát, TP.HCM | Vòng Bi Phương Nam | Cơ Khí Đại Thành, Bình Dương |
-> | Thời gian | 3–4 ngày | 6–8 ngày (ưu tiên) | Chưa rõ |
-> | Chứng nhận | Chưa xác minh | ✓ Có | Chưa xác minh |
-> | Chi phí ước tính | ~4.200.000 đ/đơn vị | +56.000.000 đ phụ phí | Có thể thương lượng |
+> | **Công ty** | Kỹ Thuật Tiến Phát, TP.HCM | Vòng Bi Phương Nam | Cơ Khí Đại Thành, Bình Dương |
+> | **Thời gian giao** | 3–4 ngày | 6–8 ngày (Hỏa tốc) | Chưa rõ |
+> | **Chứng nhận** | Chưa xác minh | ✓ Đã chuẩn hóa | Chưa xác minh |
+> | **Giá dự kiến** | ~4.200.000 VNĐ | Phụ phí +56.000.000 VNĐ | Có thể thương lượng |
 >
-> **Cách tiến hành:** Gọi Phương án A trước. Nhanh nhất nếu chứng nhận được xác minh. Đặt đơn hàng dự phòng với Phương án B ngay — hủy nếu Phương án A xác nhận. Phương án C là một cuộc điện thoại — NEXUS tìm thấy mối quan hệ trong CRM từ hội chợ thương mại 14 tháng trước, chưa được theo dõi. Nếu Đại Thành có hàng trong kho, đây là phương án nhanh nhất.
+> **Gợi ý hành động:** Gọi Phương án A trước. Chốt đơn nhanh nhất nếu họ có giấy chứng nhận. Đặt hỏa tốc Phương án B làm dự phòng ngay — hủy nếu A xác nhận. Phương án C là một cuộc điện thoại — NEXUS tìm thấy mối quan hệ trong CRM từ một hội chợ cách đây 14 tháng. Nếu họ có sẵn hàng tồn, đây sẽ là con đường nhanh nhất.
 >
-> Bản thảo email đến cả ba liên hệ đã được chuẩn bị. Xem xét và gửi từ bảng điều khiển.
+> Bản nháp email gửi cho cả ba liên hệ đã được soạn sẵn. Xem xét và bấm gửi trên hệ thống.
 
 ---
 
-Lan không ngồi xuống đọc. Chị đứng tại chỗ, cốc cà phê trên tay, mắt chạy nhanh qua các phương án.
+Chị Lan không ngồi xuống. Chị đứng sững tại chỗ, tay cầm ly cà phê, ánh mắt quét nhanh qua các lựa chọn.
 
-Phương án C khiến chị dừng lại. Công ty Cơ Khí Đại Thành. Chị nhớ mơ hồ — một cuộc trò chuyện ở hội chợ ngành, một tấm danh thiếp có thể đã mất từ lâu. Mối quan hệ tồn tại trong một mục CRM được ghi lại bởi người không còn làm ở đây, từ chuyến thăm thương mại mười bốn tháng trước. Không ai theo dõi từ đó. NEXUS đã tìm thấy nó, kéo lên và đặt lên bàn chị lúc 6 giờ sáng.
+Mắt chị dừng lại ở Phương án C. Công ty Cơ Khí Đại Thành. Chị nhớ mơ hồ — một cuộc trò chuyện chớp nhoáng ở triển lãm ngành, kèm theo một tấm danh thiếp có lẽ đã bị vứt xó từ thuở nào. Cái tên này nằm mốc meo trong phần mềm CRM, do một nhân viên đã nghỉ việc lưu lại từ chuyến công tác 14 tháng trước, và chẳng ai ngó ngàng tới kể từ đó. Vậy mà NEXUS đã cày xới dữ liệu, đào nó lên và đặt ngay ngắn lên bàn làm việc của chị lúc 6 giờ sáng.
 
-Chị gọi điện trực tiếp cho Đại Thành trước khi họ kịp đọc bất kỳ email nào.
+Chị nhấc máy gọi thẳng cho Đại Thành, chặn đầu trước cả khi họ kịp kiểm tra hộp thư sáng.
 
-Trưởng bộ phận mua hàng bắt máy ở hồi chuông thứ ba. Chị giải thích thẳng vào vấn đề — một ổ bi SKF-6305-2RS được chứng nhận, cần gấp.
+Trưởng phòng kinh doanh bên đó bắt máy ở hồi chuông thứ ba. Lan đi thẳng vào vấn đề — chị đang cần gấp một chiếc ổ bi SKF-6305-2RS đạt chuẩn.
 
-Bốn phút im lặng.
+Bốn phút trôi qua trong im lặng chờ đợi đầu dây bên kia kiểm tra kho.
 
-Bốn phút. Lan không đặt điện thoại xuống. Chị đứng đó, mắt nhìn vào biểu đồ nhiệt độ ổ bi trên màn hình — con số vẫn đang leo dần, chậm rãi nhưng không dừng. Mỗi giây chờ là một giây hợp đồng 28.000.000 yên đang mỏng đi.
+Suốt bốn phút ấy, Lan không đặt điện thoại xuống. Ánh mắt chị dán chặt vào biểu đồ nhiệt độ ổ bi trên màn hình — đường chỉ báo vẫn đang nhích dần lên từng vạch một. Cứ mỗi giây trôi qua, hợp đồng 28 triệu Yên lại lơ lửng gần bờ vực bị phạt.
 
-"Tôi có một đơn vị. Được chứng nhận. Đang nằm trong kho dự phòng nội bộ của chúng tôi, chưa có lịch sử dụng." Giọng ông bình tĩnh. "Tôi có thể bán lại. Giao xe tải đến chỗ chị — hai ngày làm việc, sáng ngày 5 tháng 10."
+"Bên tôi còn đúng một cái. Hàng chuẩn, có giấy tờ kiểm định đầy đủ. Nằm trong kho dự phòng nội bộ chưa xài tới." Giọng người đàn ông vang lên. "Tôi có thể nhượng lại cho chị. Cho xe tải chở thẳng xuống — hai ngày làm việc, sáng mùng 5 tháng 10 hàng đến nơi."
 
-Lan xác nhận, gửi hồ sơ đặt hàng qua bảng điều khiển ngay trong cuộc gọi, và cúp máy lúc 6 giờ 49 phút sáng.
+Lan chốt đơn, thao tác gửi hợp đồng mua bán ngay trên Bảng điều khiển khi cuộc gọi vẫn chưa kết thúc, rồi cúp máy lúc 6 giờ 49 phút.
 
-Chị gõ một dòng vào phiếu tìm nguồn:
+Chị gõ nhanh một tóm tắt vào phiếu tìm nguồn:
 
-> *Phương án C xác nhận. 1 đơn vị được chứng nhận từ Công ty Cơ Khí Đại Thành, Bình Dương. ETA sáng ngày 5/10. Sẽ đặt thêm 2 đơn vị từ Kỹ Thuật Tiến Phát cho tồn kho tối thiểu sau khi xác minh chứng nhận.*
+> *Phương án C đã xác nhận. Mua 1 ổ bi đạt chuẩn từ Cơ Khí Đại Thành, Bình Dương. Dự kiến sáng 05/10 nhận hàng. Sẽ đặt thêm 2 chiếc từ Kỹ Thuật Tiến Phát để dự trữ sau khi xác minh được giấy tờ.*
 
-```
-[NEXUS — CẬP NHẬT TRẠNG THÁI]  06:51 SA, ngày 3 tháng 10
-Đã xác nhận nguồn ổ bi  : Công ty Cơ Khí Đại Thành, Bình Dương (liên hệ CRM)
-ETA giao hàng            : Sáng ngày 5 tháng 10
-Hạn chót hợp đồng        : ngày 14 tháng 10
-Thời gian đệm            : 9 ngày từ ngày giao đến hạn chót
-Trạng thái tình huống    : ĐÃ KIỂM SOÁT
-Hành động tiếp theo      : Ổ bi đến ngày 5/10 → Tuấn lên lịch thay thế có kế hoạch.
-                            NEXUS sẽ phối hợp dừng Dây Chuyền B và điều chỉnh sản xuất.
-```
+> **[NEXUS — CẬP NHẬT TRẠNG THÁI]** 06:51 SA, ngày 3 tháng 10
+>
+> **Đã chốt nhà cung cấp:** Công ty Cơ Khí Đại Thành, Bình Dương (Nguồn từ CRM)
+>
+> **Thời gian nhận hàng dự kiến:** Sáng ngày 5 tháng 10
+>
+> **Hạn chót hợp đồng:** 14/10
+>
+> **Khoảng thời gian dự phòng:** 9 ngày (tính từ ngày nhận hàng đến hạn chót)
+>
+> **Trạng thái tình huống:** ĐÃ KIỂM SOÁT
+>
+> **Hành động kế tiếp:** Khi ổ bi về xưởng vào ngày 05/10 → Kỹ sư Tuấn sẽ lên lịch thay thế. NEXUS sẽ tự động phối hợp dừng Dây chuyền B và điều chỉnh sản lượng các máy khác.
 
 ---
 
-### Phần Tám: Hai Ngày Theo Dõi
+### Phần Tám: Hai Ngày Chờ Đợi
 
-Dây Chuyền B chạy ở chế độ bảo hộ suốt ngày 3 và ngày 4 tháng 10. Chậm hơn bình thường, yên tĩnh hơn bình thường, và được theo dõi sát hơn bất kỳ thứ gì khác trên sàn.
+Dây chuyền B lặc lè hoạt động ở chế độ bảo vệ suốt cả ngày 3 và 4 tháng 10. Máy chạy chậm hơn, tiếng ồn êm ru, và trở thành mục tiêu bị giám sát gắt gao nhất phân xưởng.
 
-Mỗi ba mươi giây, ARIA-B gửi một chỉ số về NEXUS. Mỗi chỉ số được ghi lại. Ổ bi không khá lên — ổ bi không bao giờ khá lên khi đã bắt đầu bị rỗ — nhưng cũng không tăng tốc đột ngột. RPM giảm đang làm đúng nhiệm vụ của nó.
+Cứ mỗi ba mươi giây, một tập dữ liệu lại được gửi về máy chủ. Chiếc ổ bi không thể tự lành lại — một khi kim loại đã bị rỗ thì nó chỉ có thể tệ đi — nhưng ít ra nó không bị hỏng nhanh hơn. Chế độ hãm tốc độ đã phát huy tác dụng.
 
-Trên bảng điều khiển trong phòng điều khiển, bảng cảm biến Dây Chuyền B kể một câu chuyện lặng lẽ:
+Trong phòng điều khiển, bảng thông số của Dây chuyền B âm thầm thuật lại một diễn biến chậm chạp:
 
-| | 3/10, 03:00 SA | 4/10, 06:00 SA |
+| | 03/10, 03:00 SA | 04/10, 06:00 SA |
 |---|---|---|
-| Nhiệt độ ổ bi | +1,8°C | +2,3°C |
-| Rung động (RMS) | +0,003mm | +0,005mm |
-| Dịch âm thanh | +11Hz | +14Hz |
-| Trạng thái | Chế độ bảo hộ | Chế độ bảo hộ |
+| Nhiệt độ ổ bi | Tăng 1,8°C | Tăng 2,3°C |
+| Độ rung (RMS) | Tăng 0,003mm | Tăng 0,005mm |
+| Biến thiên âm thanh | Lệch 11Hz | Lệch 14Hz |
+| Trạng thái | Chế độ bảo vệ | Chế độ bảo vệ |
 
-Đang tiến triển. Chậm rãi. Nhưng đang tiến.
+Tình trạng vẫn đang xấu đi. Rất chậm. Nhưng không thể đảo ngược.
 
-NEXUS đã chuẩn bị sẵn khuyến nghị bảo trì cho khi linh kiện đến.
-
----
-
-### Phần Chín: Linh Kiện Đến
-
-Tài xế giao hàng của Công ty Cơ Khí Đại Thành đến lúc 8 giờ 40 phút sáng ngày 5 tháng 10.
-
-Tuấn ký nhận kiện hàng trực tiếp, kiểm tra số hiệu linh kiện theo đơn hàng, và đối chiếu tài liệu chứng nhận với thông số kỹ thuật được phê duyệt. Tất cả khớp.
-
-Anh đặt lên bàn làm việc và mở bảng điều khiển.
-
-NEXUS đã có sẵn khuyến nghị.
+NEXUS đã chuẩn bị sẵn một lịch trình bảo trì chi tiết, chỉ chờ linh kiện về đến nhà máy.
 
 ---
 
-> **KHUYẾN NGHỊ BẢO TRÌ NEXUS — 5/10, 09:00 SA**
->
-> *Gửi: Tuấn, Kỹ sư Cao cấp*
->
-> Ổ bi thay thế được chứng nhận đã đến. Câu hỏi là: thay khi nào?
->
-> **Tình trạng ổ bi Dây Chuyền B hiện tại theo ARIA-B:**
-> - Nhiệt độ ổ bi: +2,3°C so với cơ sở *(trước là +1,8°C ngày 3/10)*
-> - Rung động (RMS): +0,005mm *(trước là +0,003mm ngày 3/10)*
-> - Dịch âm thanh: +14Hz so với cơ sở *(trước là +11Hz ngày 3/10)*
-> - Xu hướng: Tiến triển dần. Chế độ bảo hộ đang làm chậm mòn, không dừng.
->
-> **Phương án A — Thay hôm nay** *(dừng có kế hoạch, ước tính 2,5 tiếng)*
->
-> Dây Chuyền B dừng khoảng 09:30 SA đến 12:00 TR. Mất ~162 đơn vị trong thời gian dừng. Dây Chuyền A và Dây Chuyền C duy trì cấu hình nâng cao — bù đắp một phần thiếu hụt. Ổ bi được thay trong điều kiện có kiểm soát, hiệu chỉnh đầy đủ hoàn tất gọn gàng.
->
-> **Phương án B — Chờ đến cửa sổ bảo trì cuối tuần** *(3 ngày nữa)*
->
-> Dây Chuyền B tiếp tục chế độ bảo hộ đến thứ Bảy. Xác suất ước tính hư hỏng không có kế hoạch trước cuối tuần: **22%**.
->
-> **Tại sao hư hỏng không có kế hoạch không chỉ đơn giản là dừng máy lâu hơn:**
->
-> Thay thế ổ bi có kế hoạch mất 2,5 tiếng. Ổ bi bị kẹt giữa chừng sản xuất là vấn đề hoàn toàn khác. Khi ổ bi hỏng giữa chu kỳ, máy ép dừng đột ngột không có cảnh báo. Mảnh kim loại từ vòng đua bị kẹt bắn vào hộp truyền động và có thể vào khuôn. Trước khi máy chạy lại: tháo và vệ sinh toàn bộ hộp truyền động, kéo và kiểm tra khuôn từng mảnh để tìm kim loại, kiểm tra dụng cụ gia công. Hiệu chỉnh lại khuôn từ đầu mất 4–6 tiếng. Tổng thời gian dừng: **18–36 tiếng**. Không phải vì thay ổ bi mất nhiêu đó, mà vì tất cả mọi thứ xung quanh khi hư hỏng không có kế hoạch.
->
-> Dừng 2,5 tiếng có kế hoạch là quyết định về lịch trình. Kẹt ổ bi giữa ca là khủng hoảng toàn diện, không có chuẩn bị, không có cảnh báo.
->
-> Linh kiện đang ở trên bàn làm việc của anh. Cửa sổ là bây giờ.
->
-> **Khuyến nghị của NEXUS: Thay hôm nay.**
->
-> **[ PHÊ DUYỆT DỪNG CÓ KẾ HOẠCH — HÔM NAY ]** &nbsp;&nbsp; **[ LÊN LỊCH CHO CUỐI TUẦN ]**
+### Phần Chín: Mảnh Ghép Cuối Cùng
+
+Chiếc xe tải của Cơ Khí Đại Thành đỗ xịch trước cổng nhà máy lúc 8 giờ 40 phút sáng ngày 05 tháng 10.
+
+Đích thân Tuấn ra ký nhận, kiểm tra mã số linh kiện, và đối chiếu tài liệu chứng nhận chất lượng xem có khớp với yêu cầu hay không. Mọi thứ đều hoàn hảo.
+
+Anh đặt linh kiện lên bàn làm việc và mở Bảng điều khiển.
+
+NEXUS đã trình sẵn các lựa chọn.
 
 ---
 
-Tuấn đã theo dõi những con số cảm biến leo dần hai ngày nay. Anh đã tận mắt nhìn vết rỗ trên vòng đua ngoài đó sáng ngày 3 tháng 10. Khuyến nghị của NEXUS không nói với anh điều gì mà anh chưa tự kết luận.
+> **ĐỀ XUẤT BẢO TRÌ TỪ NEXUS — 05/10, 09:00 SA**
+>
+> *Người nhận: Tuấn, Kỹ sư Bậc cao*
+>
+> Ổ bi thay thế đã sẵn sàng. Quyết định bây giờ là: Thay vào lúc nào?
+>
+> **Tình trạng ổ bi cũ (Dữ liệu từ ARIA-B):**
+> - Nhiệt độ: +2,3°C so với chuẩn *(tăng từ +1,8°C ngày 03/10)*
+> - Độ rung (RMS): +0,005mm *(tăng từ +0,003mm ngày 03/10)*
+> - Biến thiên âm thanh: +14Hz so với chuẩn *(tăng từ +11Hz ngày 03/10)*
+> - Xu hướng: Mức độ hỏng hóc đang tiến triển. Chế độ bảo vệ chỉ giúp kéo dài thời gian, không thể ngăn chặn sự cố.
+>
+> **Phương án 1 — Thay ngay hôm nay** *(Dừng máy chủ động, ước tính mất 2,5 giờ)*
+>
+> Dây chuyền B ngừng chạy từ khoảng 09:30 SA đến 12:00 TR. Tổn thất khoảng 162 sản phẩm trong thời gian chờ. Dây chuyền A và C tiếp tục gồng gánh chạy vượt công suất để bù đắp một phần. Ổ bi được thay thế bài bản, hiệu chuẩn lại hoàn chỉnh và gọn gàng.
+>
+> **Phương án 2 — Chờ đến kỳ bảo trì cuối tuần** *(Còn 3 ngày nữa)*
+>
+> Dây chuyền B tiếp tục chạy chậm đến thứ Bảy. Xác suất xảy ra hỏng hóc ngoài ý muốn trước cuối tuần là: **22%**.
+>
+> **Ghi chú cảnh báo từ NEXUS:**
+>
+> Thay ổ bi chủ động chỉ mất 2,5 tiếng. Nhưng để ổ bi kẹt cứng giữa lúc ép hàng là một thảm họa tốn kém. Khi ổ bi nổ tung giữa chu kỳ, máy ép sẽ chết đứng mà không hề báo động. Những mảnh vỡ kim loại sẽ văng vào hộp số và rớt vào khuôn đúc. Trước khi khởi động lại, chúng ta phải tháo tung toàn bộ hộp số để làm sạch, rà soát từng chi tiết khuôn tìm mảnh vụn. Riêng việc hiệu chuẩn lại khuôn đúc từ đầu đã mất 4–6 tiếng. Tổng thời gian nằm chết máy: **18–36 giờ**. Sự khác biệt không nằm ở thời gian thay, mà nằm ở công sức đi dọn dẹp hậu quả.
+>
+> Dành 2,5 tiếng dừng máy có kế hoạch là một quyết định chiến lược. Máy hỏng giữa ca là một khủng hoảng không lường trước.
+>
+> Linh kiện đang nằm trên bàn làm việc của anh. Thời điểm vàng là ngay lúc này.
+>
+> **Khuyến nghị từ NEXUS: Thay NGAY HÔM NAY.**
+>
+> **[ PHÊ DUYỆT DỪNG MÁY CHỦ ĐỘNG — HÔM NAY ]** &nbsp;&nbsp; **[ CHỜ ĐẾN CUỐI TUẦN ]**
 
-Anh nhấp **[ PHÊ DUYỆT DỪNG CÓ KẾ HOẠCH — HÔM NAY ]**.
+---
 
-NEXUS gửi chuỗi lệnh trong vài giây — trước là máy, sau là con người, trong hai luồng riêng biệt.
+Tuấn đã quá nhẵn mặt với mớ thông số cứ nhích dần lên trong suốt hai ngày qua. Chính mắt anh cũng đã nhìn thấy vết rỗ trên cái vòng bi chết tiệt đó vào sáng ngày 3. Những lý lẽ hệ thống đưa ra hoàn toàn trùng khớp với suy nghĩ của anh.
 
-```
-[NEXUS → ARIA-B]  09:08 SA
-LỆNH   : Khởi động chuỗi dừng có kiểm soát
-           Giảm RPM xuống không tải trong 8 phút
-           Ghi lại các chỉ số ổ bi cuối cùng trước khi thay thế
-ARIA-B : Đã xác nhận. Đang bắt đầu giảm dần xuống không tải.
-           Chỉ số cuối: Nhiệt độ +2,3°C | Rung động +0,005mm | Âm thanh +14Hz
-           Đang quay xuống.
-```
+Anh dứt khoát bấm chọn **[ PHÊ DUYỆT DỪNG MÁY CHỦ ĐỘNG — HÔM NAY ]**.
 
-```
-[NEXUS → ARIA-A]  09:08 SA
-LỆNH   : Duy trì cấu hình vận hành nâng cao trong cửa sổ bảo trì Dây Chuyền B
-           Mục tiêu 960 đơn vị/ngày không đổi. Thời gian cửa sổ ước tính: 2,5 tiếng
-ARIA-A : Đã xác nhận. Đang chạy.
+NEXUS lập tức xả đi một loạt lệnh trong vài giây — phần cứng nhận trước, con người nhận sau, chia làm hai luồng riêng biệt.
 
-[NEXUS → ARIA-C]  09:08 SA
-LỆNH   : Duy trì cấu hình vận hành nâng cao trong cửa sổ bảo trì Dây Chuyền B
-           Mục tiêu 940 đơn vị/ngày không đổi.
-           Lưu ý: Nhiệt độ dầu làm mát hiện +0,8°C so với cơ sở. Theo dõi.
-           Báo nếu vượt +1,5°C trong khi chạy nâng cao.
-ARIA-C : Đã xác nhận. Đang chạy. Đang theo dõi dầu làm mát.
-```
+> **[NEXUS → ARIA-B]** 09:08 SA
+>
+> **LỆNH:** Kích hoạt quy trình dừng máy an toàn. Giảm tốc độ về 0 trong 8 phút. Chốt lại các thông số cuối cùng trước khi thay.
+>
+> **ARIA-B:** Đã nhận lệnh. Bắt đầu hãm vòng quay. Các chỉ số cuối: Nhiệt độ +2,3°C | Độ rung +0,005mm | Âm thanh +14Hz. Đang dừng hẳn.
 
-Với lệnh máy đã xác nhận, NEXUS đẩy thông báo lên bảng điều khiển đến trạm vận hành Dây Chuyền B và giám sát ca: *Dây Chuyền B bắt đầu dừng bảo trì có kế hoạch. Thời gian ước tính 2,5 tiếng. Dây Chuyền A và Dây Chuyền C đang bù đắp sản lượng. Không cần hành động từ đội sàn xưởng.*
+> **[NEXUS → ARIA-A]** 09:08 SA
+>
+> **LỆNH:** Duy trì thông số vượt tải trong suốt thời gian Dây chuyền B bảo trì. Mục tiêu 960 sp/ngày không đổi. Thời gian bảo trì dự kiến: 2,5 tiếng.
+>
+> **ARIA-A:** Đã nhận lệnh. Tiếp tục vận hành.
 
-Lúc 9 giờ 30 phút sáng, Dây Chuyền B dừng hoàn toàn và có kế hoạch.
+> **[NEXUS → ARIA-C]** 09:08 SA
+>
+> **LỆNH:** Duy trì thông số vượt tải trong suốt thời gian Dây chuyền B bảo trì. Mục tiêu 940 sp/ngày không đổi. Lưu ý: Nhiệt độ dầu làm mát đang ở mức +0,8°C. Cảnh báo ngay nếu vượt +1,5°C trong lúc chạy vượt tải.
+>
+> **ARIA-C:** Đã nhận lệnh. Tiếp tục vận hành. Đang giám sát nhiệt độ dầu.
 
-Tuấn và kỹ thuật viên mở vỏ máy ép. Ổ bi cũ ra khỏi máy theo hai mảnh — vòng đua ngoài đã hình thành vết nứt dọc theo vùng rỗ mà không cảm biến nào có thể phát hiện, chỉ nhìn thấy được lúc này, trong tay anh, dưới ánh đèn làm việc.
+Khi máy móc đã răm rắp tuân lệnh, NEXUS mới đẩy thông báo lên màn hình trạm vận hành Dây chuyền B và trưởng ca: *“Dây chuyền B bắt đầu bảo trì có kế hoạch. Thời gian dự kiến: 2,5 tiếng. Dây chuyền A và C đang gánh bù sản lượng. Anh em công nhân dưới xưởng không cần thao tác gì thêm.”*
 
-Anh giữ hai nửa đó một lúc mà không nói gì.
+Đúng 9 giờ 30 phút, Dây chuyền B ngừng bặt theo đúng kế hoạch.
 
-*Thêm ba ngày nữa là cái này hỏng giữa ca. Không có cảnh báo. Giữa chu kỳ, giữa khuôn. Dọn dẹp xong là hết cuối tuần rồi.*
+Tuấn cùng tổ kỹ thuật tháo dỡ nắp máy. Chiếc ổ bi cũ vừa lôi ra đã tách làm hai nửa — một vết nứt sâu hoắm đã xuất hiện chạy dọc theo khu vực bị rỗ mòn, thứ mà không một cảm biến nào có thể phát hiện, chỉ lộ diện dưới ánh đèn tuýp sáng trưng trên tay Tuấn.
 
-Ổ bi mới lắp vào lúc 11 giờ 10 phút sáng. Tuấn chạy một chu kỳ hiệu chỉnh đầy đủ — kiểm tra kích thước, ghi lại cơ sở cảm biến, hai chu kỳ thử nghiệm tốc độ thấp trước khi cho phép chạy tải sản xuất. Anh không vội.
+Anh cầm hai nửa ổ bi vỡ trên tay, câm lặng.
 
-```
-[ARIA-B → NEXUS]  11:44 SA
-TRẠNG THÁI: Đã thay ổ bi. Hiệu chỉnh đầy đủ hoàn tất. Đã thiết lập cơ sở mới
-              trên toàn bộ 17 cảm biến. Tất cả chỉ số bình thường.
-Yêu cầu   : Thoát chế độ bảo hộ. Trở về cấu hình vận hành tiêu chuẩn.
+*Cố ép chạy thêm ba ngày nữa thì cục nợ này chắc chắn nổ tung giữa ca làm việc. Không có lấy một tiếng chuông báo trước. Vỡ ngay khi đang ép hàng. Dọn xong cái bãi tàn tích này có mà hết luôn mấy ngày nghỉ cuối tuần.*
 
-[NEXUS → ARIA-B]  11:44 SA
-LỆNH      : Thoát chế độ bảo hộ. Trở về cấu hình vận hành tiêu chuẩn.
-              Đặt lại đọc cảm biến về khoảng thời gian tiêu chuẩn.
-ARIA-B    : Đã xác nhận. Đang chạy.
-```
+Chiếc ổ bi mới cáu cạnh được lắp vào vị trí lúc 11 giờ 10 phút. Tuấn cho chạy một quy trình hiệu chuẩn toàn diện — đo lường lại kích thước, chốt lại thông số chuẩn cho cảm biến, chạy thử hai vòng ở tốc độ thấp trước khi mạnh dạn cho máy ép khuôn thật. Anh làm mọi thứ cẩn thận, không mảy may vội vã.
 
-Dây Chuyền B trở lại tốc độ đầy đủ lúc 11 giờ 52 phút sáng.
+> **[ARIA-B → NEXUS]** 11:44 SA
+>
+> **TRẠNG THÁI:** Đã thay thế xong. Hiệu chuẩn hoàn tất. Đã thiết lập thông số chuẩn mới cho toàn bộ 17 cảm biến. Mọi chỉ số đều ở mức lý tưởng.
+>
+> **Yêu cầu:** Xin phép thoát chế độ bảo vệ. Trở về công suất vận hành thông thường.
 
-Hai tiếng rưỡi sau khi dừng, nó đang chạy tốt hơn nhiều tuần qua.
+> **[NEXUS → ARIA-B]** 11:44 SA
+>
+> **LỆNH:** Phê duyệt. Thoát chế độ bảo vệ. Khôi phục lại thông số máy ban đầu. Trả tần suất đọc cảm biến về mức chuẩn.
+>
+> **ARIA-B:** Đã nhận lệnh. Bắt đầu vận hành.
+
+Đúng 11 giờ 52 phút, Dây chuyền B lấy lại phong độ tối đa.
+
+Chỉ hai tiếng rưỡi sau khi tắt máy, nó đã hoạt động trơn tru và mạnh mẽ hơn hẳn so với nhiều tuần qua.
 
 ---
 
 ### Phần Mười: Góc Nhìn Của Giám Đốc
 
-Hương, Giám đốc Nhà máy, nhận được một đoạn thông báo ngắn từ NEXUS lúc 6 giờ 05 phút sáng ngày 3 tháng 10. Bà đọc khi đang ăn sáng, ghi nhận rằng giám sát ca đêm đã phê duyệt các biện pháp bảo hộ, và để nhóm của bà làm việc.
+Bà Hương, Giám đốc Nhà máy, nhận được một đoạn tin vắn từ NEXUS vào lúc 6 giờ 05 phút sáng ngày 3 tháng 10. Bà vừa ăn sáng vừa đọc lướt qua, thấy dòng chữ trưởng ca đêm đã kích hoạt quy trình bảo vệ rủi ro, thế là bà yên tâm để cho đội ngũ của mình tự giải quyết.
 
-Đó là phản ứng đúng đắn. NEXUS biết sự khác biệt giữa tình huống cần sự can thiệp của giám đốc và tình huống chỉ cần giám đốc nắm được, và đã viết thông báo cho bà theo đúng tinh thần đó.
+Đó là phản xạ đúng đắn của người làm tướng. NEXUS dư sức phân biệt được đâu là tình huống cần Giám đốc xắn tay áo vào chỉ đạo, và đâu là chuyện chỉ cần báo cáo để sếp nắm tình hình, từ đó nó tự điều chỉnh thông báo theo đúng tinh thần đó.
 
-Giờ, ngày 6 tháng 10, với ổ bi đã được thay và hợp đồng trở về đường ray vững chắc, bà mở bảng điều khiển và yêu cầu báo cáo sự cố đầy đủ. Cuộc họp hội đồng quản trị còn hai tuần nữa. Bà muốn điều này trình bày trước họ.
+Hôm nay, ngày 6 tháng 10, chiếc ổ bi đã được thay mới tinh tươm và bản hợp đồng tiền tỷ đã được cứu vãn vững chắc, bà Hương mở Bảng điều khiển và yêu cầu trích xuất toàn bộ hồ sơ sự cố. Hai tuần nữa là đến kỳ họp Hội đồng quản trị. Bà muốn trình bày thương vụ này lên bàn họp.
 
-Báo cáo tạo ra trong vòng chưa đầy một phút.
+Bản báo cáo hoàn chỉnh được xuất ra trong vòng chưa tới một phút.
 
 ---
 
-### BÁO CÁO SỰ CỐ NEXUS
-**Ngăn Chặn Hư Hỏng Ổ Bi — Dây Chuyền B | Hợp đồng JP-2024-441, Nakamura Plastics Co.**
-*Chuẩn bị cho: Hương, Giám đốc Nhà máy | Ngày: 6 tháng 10*
+### BÁO CÁO SỰ CỐ TỪ NEXUS
+**Chặn Đứng Nguy Cơ Thảm Họa Dây Chuyền B | Hợp đồng JP-2024-441, Nakamura Plastics Co.**
+*Kính gửi: Giám đốc Nhà máy — Bà Hương | Ngày lập: 06/10*
 
-**Tóm tắt điều hành**
+**Tóm tắt nội dung**
 
-Vào ngày 3 tháng 10 lúc 02:47 SA, ARIA-B phát hiện mòn ổ bi giai đoạn đầu trên máy ép xoay trục Dây Chuyền B — một lỗi dưới ngưỡng của mọi hệ thống báo động tiêu chuẩn trên sàn, và không thể phát hiện bằng quan sát thông thường. NEXUS đối chiếu phát hiện với hợp đồng đang hiệu lực, hồ sơ tồn kho và thời gian giao hàng của nhà cung cấp trong 31 giây, và phân loại lại cảnh báo từ THẤP lên NGHIÊM TRỌNG.
+Vào lúc 02:47 SA ngày 03/10, hệ thống ARIA-B phát hiện dấu hiệu bào mòn ổ bi ở giai đoạn chớm nở trên máy ép Dây chuyền B — một lỗi vi mô nằm dưới mọi ngưỡng còi báo động tiêu chuẩn dưới xưởng, và hoàn toàn không thể phát hiện bằng quan sát thông thường. Chỉ trong vòng 31 giây, NEXUS đã đối chiếu dữ liệu từ hợp đồng đang chạy, lượng hàng tồn kho và tiến độ giao hàng của đối tác, từ đó nâng mức độ cảnh báo từ THẤP lên NGHIÊM TRỌNG.
 
-Thông qua hành động phối hợp giữa giám sát ca đêm, chuỗi cung ứng và kỹ thuật — được hướng dẫn ở mỗi bước bởi NEXUS — một ổ bi thay thế được chứng nhận đã được tìm nguồn qua một mối quan hệ CRM hiện có và đến trong hai ngày làm việc. Nó được lắp đặt trong cửa sổ dừng có kế hoạch 2,5 tiếng ngày 5 tháng 10, chín ngày trước hạn chót hợp đồng.
+Thông qua sự phối hợp nhịp nhàng giữa trưởng ca đêm, phòng cung ứng và đội ngũ kỹ sư — tất cả đều được NEXUS dẫn dắt từng bước — nhà máy đã khẩn trương tìm được linh kiện chuẩn thay thế thông qua một đầu mối trong hệ thống CRM cũ, và nhận hàng trong vòng hai ngày làm việc. Quá trình thay thế diễn ra an toàn trong khung thời gian bảo trì 2,5 giờ vào ngày 05/10, tức là còn dư dả 9 ngày trước khi hết hạn hợp đồng.
 
-Hợp đồng JP-2024-441 vẫn đúng tiến độ giao hàng ngày 13 tháng 10, sớm hơn hạn chót một ngày.
+Tiến độ hợp đồng JP-2024-441 vẫn được duy trì, dự kiến giao hàng vào ngày 13/10 — sớm hơn thời hạn một ngày.
 
-**Trạng thái Hợp đồng**
+**Tình trạng Hợp đồng**
 
 | Hợp đồng | JP-2024-441, Nakamura Plastics Co., Osaka |
 |---|---|
-| Khối lượng | 4.800 đơn vị |
-| Hạn chót | 14 tháng 10 |
-| Dự báo hiện tại | 13 tháng 10 — đúng tiến độ |
-| Phạt tránh được | ¥28.000.000 |
+| Khối lượng | 4.800 sản phẩm |
+| Hạn chót | 14/10 |
+| Tiến độ hiện tại | 13/10 — Đúng tiến độ |
+| Khoản phạt đã tránh được | ¥28.000.000 |
 
-**Mốc thời gian Sự cố**
+**Diễn biến Sự cố**
 
 | Thời gian | Sự kiện |
 |---|---|
-| 3/10, 02:47 SA | ARIA-B phát hiện sai lệch vi mô phức hợp. Nhận dạng mẫu mòn ổ bi ở độ tin cậy 84%. |
-| 3/10, 02:48 SA | NEXUS leo thang lên NGHIÊM TRỌNG — tồn kho bằng không, thời gian giao có chứng nhận vượt hạn chót. |
-| 3/10, 03:04 SA | Giám sát ca đêm Minh xem xét và phê duyệt tất cả biện pháp bảo hộ. |
-| 3/10, 03:12 SA | NEXUS chỉ thị ARIA-B vào chế độ bảo hộ. ARIA-A và ARIA-C nhận cấu hình nâng cao sau khi vận hành viên xác nhận. |
-| 3/10, 06:20 SA | Kỹ sư cao cấp Tuấn dừng Dây Chuyền B để kiểm tra. Mòn ổ bi được xác nhận trực tiếp. |
-| 3/10, 06:49 SA | Chị Lan tìm được ổ bi được chứng nhận — Công ty Cơ Khí Đại Thành, Bình Dương. ETA ngày 5/10. |
-| 5/10, 08:40 SA | Ổ bi đến. Được kiểm tra và xác minh bởi Tuấn. |
-| 5/10, 09:30 SA | Dừng có kế hoạch Dây Chuyền B bắt đầu. ARIA-A và ARIA-C duy trì sản lượng nâng cao. |
-| 5/10, 11:52 SA | Ổ bi mới lắp và hiệu chỉnh. Dây Chuyền B trở lại vận hành đầy đủ. |
-| 6/10 | Ba dây chuyền chạy cấu hình tiêu chuẩn. Hợp đồng đúng tiến độ. |
+| 03/10, 02:47 SA | ARIA-B phát hiện sai lệch vi mô trên 3 chỉ số. Nhận diện mòn ổ bi với độ tin cậy 84%. |
+| 03/10, 02:48 SA | NEXUS nâng mức cảnh báo lên NGHIÊM TRỌNG do hết tồn kho và thời gian nhập hàng thông thường quá lâu. |
+| 03/10, 03:04 SA | Trưởng ca đêm Minh duyệt mọi phương án chạy máy an toàn. |
+| 03/10, 03:12 SA | NEXUS đưa Dây chuyền B vào chế độ bảo vệ. Dây chuyền A và C được nâng công suất sau khi thợ máy xác nhận. |
+| 03/10, 06:20 SA | Kỹ sư Tuấn dừng máy kiểm tra thực tế. Mòn ổ bi được xác nhận bằng mắt thường. |
+| 03/10, 06:49 SA | Trưởng phòng Lan chốt được nguồn hàng chuẩn từ Cơ Khí Đại Thành, Bình Dương. Dự kiến nhận hàng 05/10. |
+| 05/10, 08:40 SA | Linh kiện về xưởng. Kỹ sư Tuấn kiểm tra, xác nhận đạt chuẩn. |
+| 05/10, 09:30 SA | Bắt đầu quy trình tắt máy chủ động. Dây chuyền A và C vẫn chạy năng suất cao để gánh phần hao hụt. |
+| 05/10, 11:52 SA | Lắp xong ổ bi mới, hoàn tất hiệu chuẩn. Dây chuyền B chạy lại 100% công suất. |
+| 06/10 | Cả ba dây chuyền trở lại định mức thông thường. Hợp đồng đúng tiến độ. |
 
-**Chi phí Phản ứng**
+**Bảng Chi Phí Khắc Phục**
 
-| Hạng mục | Chi phí |
+| Khoản mục | Chi phí |
 |---|---|
-| Ổ bi — Cty Cơ Khí Đại Thành (bán lại từ kho dự phòng) | ~4.200.000 đ |
-| Phí giao hàng nhanh | ~1.800.000 đ |
-| 2 đơn vị bổ sung, Kỹ Thuật Tiến Phát (tồn kho tối thiểu) | ~8.400.000 đ |
-| **TỔNG** | **~14.400.000 đ** |
+| Mua 01 ổ bi — Cơ Khí Đại Thành (Hàng nhượng lại) | ~4.200.000 VNĐ |
+| Phí vận chuyển hỏa tốc | ~1.800.000 VNĐ |
+| Mua dự phòng 02 chiếc — Kỹ Thuật Tiến Phát | ~8.400.000 VNĐ |
+| **TỔNG CỘNG** | **~14.400.000 VNĐ** |
 
-**Phạt tránh được: ¥28.000.000 (~660.000.000 đồng)**
+**Tiền phạt đền bù đã tránh được: ¥28.000.000 (~660.000.000 VNĐ)**
 
-Sự khác biệt giữa dừng có kế hoạch và hư hỏng không có kế hoạch không chỉ là thời gian. Đó là khuôn, dụng cụ gia công, các linh kiện bị kiểm dịch, và khách hàng.
+Sự khác biệt giữa việc chủ động dừng máy 2,5 giờ và để máy tự hỏng đột ngột không chỉ nằm ở quỹ thời gian. Nó còn nằm ở những khuôn đúc đắt tiền, những bộ dụng cụ gia công, đống linh kiện phải bỏ đi và quan trọng nhất — là lòng tin của khách hàng.
 
-**Nguyên nhân Gốc rễ**
+**Nguyên nhân Cốt lõi**
 
-Ổ bi SKF-6305-2RS đã được sử dụng hai tháng trước khi xảy ra sự cố trong một chu kỳ bảo trì định kỳ. Không có lệnh đặt hàng lại nào được tạo. Không có chính sách tồn kho tối thiểu nào tồn tại cho lớp linh kiện này. Khoảng trống không được bất kỳ hệ thống nào báo hiệu cho đến khi phát hiện của ARIA-B kích hoạt kiểm tra chéo tồn kho của NEXUS lúc 02:47 SA ngày 3 tháng 10.
+Ổ bi SKF-6305-2RS chiếc cuối cùng đã bị xuất kho từ hai tháng trước trong một kỳ bảo dưỡng định kỳ. Không có lệnh mua hàng nào được tạo bù vào. Cũng chưa có chính sách quy định số lượng tồn kho tối thiểu cho loại vật tư này. Khoảng trống rủi ro này không một hệ thống nào cảnh báo, cho đến khi tín hiệu lỗi từ ARIA-B kích hoạt chức năng rà soát tổng thể của NEXUS vào lúc 02:47 SA ngày 03/10.
 
-**Các biện pháp Khắc phục đã Thực hiện**
+**Biện pháp Khắc phục Lâu dài**
 
-Đã thiết lập mức tồn kho tối thiểu ba đơn vị cho lớp ổ bi SKF-6305 — áp dụng cho cả ba dây chuyền. Công ty Kỹ Thuật Tiến Phát đã được thêm vào danh sách nhà cung cấp chờ kiểm toán chứng nhận. Mối quan hệ với Công ty Cơ Khí Đại Thành, Bình Dương đã được xác nhận và thêm vào danh sách tìm nguồn ưu tiên. ARIA-B đã hiệu chỉnh lại cơ sở sau khi thay ổ bi. Chính sách đặt hàng lại đã được cập nhật: vật tư tiêu hao quan trọng sẽ kích hoạt cảnh báo NEXUS tự động khi đạt ngưỡng tồn kho tối thiểu.
+Nhà máy đã áp dụng quy định tồn kho tối thiểu (3 chiếc) cho dòng ổ bi SKF-6305, áp dụng trên cả ba dây chuyền. Đưa Kỹ Thuật Tiến Phát vào danh sách đối tác chờ thẩm định chất lượng. Đưa Cơ Khí Đại Thành (Bình Dương) vào danh sách ưu tiên mua hàng khẩn cấp. ARIA-B đã cập nhật lại toàn bộ thông số chuẩn sau khi lắp linh kiện mới. Quy trình mua hàng cũng được nâng cấp: Hệ thống sẽ tự động gửi cảnh báo qua NEXUS khi lượng vật tư tiêu hao quan trọng chạm mốc tồn kho tối thiểu.
 
-**Ghi chú cho Hội đồng Quản trị**
+**Ghi chú dành cho Hội đồng Quản trị**
 
-Sự cố này cung cấp một ví dụ cụ thể và được định lượng đầy đủ về lợi nhuận đầu tư vào hệ thống ARIA/NEXUS.
+Sự cố này mang đến một minh chứng cụ thể, đầy đủ con số thực tế về bài toán hiệu quả lợi nhuận khi đầu tư vào hệ thống ARIA/NEXUS.
 
-Rủi ro tài chính được xác định và xử lý — ¥28.000.000 — bắt nguồn từ sai lệch nhiệt độ 1,8°C và thay đổi rung động 0,003mm, được phát hiện lúc 2 giờ 47 phút sáng, trước khi bất kỳ báo động thông thường nào kích hoạt và trước khi bất kỳ ai trên sàn có lý do để nhìn vào máy đó.
+Rủi ro tài chính khổng lồ — 660.000.000 VNĐ — đã được chặn đứng kịp thời, khởi nguồn chỉ từ việc phát hiện ra mức chênh lệch nhiệt độ 1,8°C và độ rung mỏng cỡ 0,003mm vào lúc 2 giờ 47 phút sáng. Mọi chuyện được dập tắt trước khi bất kỳ còi báo động thông thường nào kịp kêu, và trước khi có bất kỳ ai dưới xưởng nhận ra điều bất thường.
 
-Tổng chi phí phản ứng: 14.400.000 đồng. Chi phí ổ bi: 4.200.000 đồng.
+Tổng chi phí để giải quyết vấn đề: 14.400.000 VNĐ. Tiền mua ổ bi: 4.200.000 VNĐ.
 
-Trường hợp này được đề xuất đưa vào đánh giá vận hành Q4 của hội đồng như một ví dụ tham chiếu về giá trị bảo trì dự đoán, tích hợp dữ liệu đa hệ thống, và sự khác biệt chi phí có thể đo lường được giữa phản ứng có quản lý và hư hỏng không có kế hoạch.
+Trường hợp này được đề xuất đưa vào báo cáo đánh giá vận hành Quý 4 của Hội đồng quản trị, xem như một minh chứng thực tiễn về giá trị của công nghệ **bảo trì dự đoán**, sự ưu việt của việc tích hợp dữ liệu liên phòng ban, và bài toán đối chiếu chi phí rõ rệt giữa việc quản lý chủ động so với hỏng hóc ngoài kế hoạch.
 
-`[ XUẤT FILE PDF ]` &nbsp;&nbsp; `[ CHIA SẺ VỚI HỘI ĐỒNG ]` &nbsp;&nbsp; `[ LƯU TRỮ ]`
+`[ XUẤT RA FILE PDF ]` &nbsp;&nbsp; `[ GỬI CHO HỘI ĐỒNG QUẢN TRỊ ]` &nbsp;&nbsp; `[ LƯU TRỮ HỒ SƠ ]`
 
 ---
 
-Hương đọc qua một lần, không sửa đổi gì, và nhấp **[ CHIA SẺ VỚI HỘI ĐỒNG ]**.
+Bà Hương đọc một mạch từ đầu đến cuối. Chẳng cần sửa lấy một nét chấm phẩy, bà hài lòng bấm **[ GỬI CHO HỘI ĐỒNG QUẢN TRỊ ]**.
 
-Sau đó bà cầm điện thoại lên và gọi cho Minh.
+Sau đó bà nhấc điện thoại lên và gọi thẳng cho Minh.
 
-Anh bắt máy ở hồi chuông thứ hai, ngạc nhiên khi nghe giọng giám đốc.
+Anh bắt máy ở hồi chuông thứ hai, thoáng chút ngỡ ngàng khi nghe giọng sếp lớn.
 
-"Quyết định tốt lúc 3 giờ sáng," bà nói ngắn gọn. "Đó là việc làm đúng."
+"Cú chốt duyệt phương án lúc 3 giờ sáng của cậu cứng tay lắm," bà nói rành rọt. "Đó là một quyết định chuẩn xác."
 
-Một khoảng dừng ngắn trên đường dây.
+Đầu dây bên kia im lặng mất một nhịp.
 
-"NEXUS làm cho dễ," anh trả lời.
+"Cũng nhờ có NEXUS dọn sẵn đường cho em thôi sếp ạ," anh thật thà đáp.
 
-"Bao giờ cũng vậy," bà đáp. "Nhưng vẫn cần ai đó nói có."
+"Bao giờ chẳng vậy," bà cười nhẹ. "Nhưng rốt cuộc, máy móc có thông minh đến mấy, thì ở khoảnh khắc quyết định, nó vẫn cần một con người đứng ra gật đầu."
 
 ---
 
