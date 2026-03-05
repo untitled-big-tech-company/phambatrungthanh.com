@@ -47,7 +47,7 @@ function BlogPost() {
     : undefined;
 
   return (
-    <article>
+    <article className="rounded-md bg-white p-6 shadow-sm sm:p-8">
       <header className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight">{post.title}</h1>
         <p className="mt-2 text-sm text-gray-500">

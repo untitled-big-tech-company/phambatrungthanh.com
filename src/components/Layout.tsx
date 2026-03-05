@@ -7,15 +7,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Link to="/" className="text-xl font-bold tracking-tight">
           Trung Thanh
         </Link>
-        <nav>
-          <Link
-            to="/blog"
-            className="text-gray-600 hover:text-gray-900 transition-colors"
-            activeProps={{ className: "text-gray-900 font-medium" }}
-          >
-            Bài viết
-          </Link>
-        </nav>
       </header>
       <main className="py-8">{children}</main>
       <footer className="border-t border-gray-100 py-8 text-sm text-gray-400">
